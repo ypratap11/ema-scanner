@@ -24,6 +24,7 @@
           const [error, setError] = useState(null);
           const [sortConfig, setSortConfig] = useState({ key: 'ema50Distance', direction: 'ascending' });
 
+          const [emaFilter, setEmaFilter] = useState('50');
           const [typeFilter, setTypeFilter] = useState('all');
           const [indexFilter, setIndexFilter] = useState('all');
           const [breakoutFilter, setBreakoutFilter] = useState('all');
@@ -37,7 +38,7 @@
 
           useEffect(() => {
             applyFilters();
-          }, [data, typeFilter, indexFilter, breakoutFilter, searchTerm]);
+          }, [data, emaFilter, typeFilter, indexFilter, breakoutFilter, searchTerm]);
 
           const loadData = async () => {
             try {
@@ -76,12 +77,14 @@
               filtered = filtered.filter(d => d.index === indexFilter);
             }
 
+            const emaDistanceKey = emaFilter === '50' ? 'ema50Distance' : 'ema200Distance';
+
             if (breakoutFilter === 'near') {
-              filtered = filtered.filter(d => d.ema50Distance > -3 && d.ema50Distance < 0);
+              filtered = filtered.filter(d => d[emaDistanceKey] > -3 && d[emaDistanceKey] < 0);
             } else if (breakoutFilter === 'above') {
-              filtered = filtered.filter(d => d.ema50Distance > 0);
+              filtered = filtered.filter(d => d[emaDistanceKey] > 0);
             } else if (breakoutFilter === 'below') {
-              filtered = filtered.filter(d => d.ema50Distance <= -3);
+              filtered = filtered.filter(d => d[emaDistanceKey] <= -3);
             }
 
             if (searchTerm) {
@@ -128,14 +131,18 @@
           };
 
           const resetFilters = () => {
+            setEmaFilter('50');
             setTypeFilter('all');
             setIndexFilter('all');
             setBreakoutFilter('all');
             setSearchTerm('');
           };
 
-          const near50 = filteredData.filter(d => d.ema50Distance > -3 && d.ema50Distance < 0);
-          const above50 = filteredData.filter(d => d.ema50Distance > 0);
+          const emaDistanceKey = emaFilter === '50' ? 'ema50Distance' : 'ema200Distance';
+          const emaKey = emaFilter === '50' ? 'ema50' : 'ema200';
+
+          const near50 = filteredData.filter(d => d[emaDistanceKey] > -3 && d[emaDistanceKey] < 0);
+          const above50 = filteredData.filter(d => d[emaDistanceKey] > 0);
           const above200 = filteredData.filter(d => d.ema200Distance > 0);
 
           if (loading) {
@@ -191,7 +198,18 @@
                     className: 'text-sm text-blue-600 hover:text-blue-800 underline'
                   }, 'Reset All')
                 ),
-                e('div', { className: 'grid grid-cols-1 md:grid-cols-4 gap-4' },
+                e('div', { className: 'grid grid-cols-1 md:grid-cols-5 gap-4' },
+                  e('div', null,
+                    e('label', { className: 'block text-sm font-medium text-slate-700 mb-2' }, 'EMA'),
+                    e('select', {
+                      value: emaFilter,
+                      onChange: (ev) => setEmaFilter(ev.target.value),
+                      className: 'w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500'
+                    },
+                      e('option', { value: '50' }, '50 EMA'),
+                      e('option', { value: '200' }, '200 EMA')
+                    )
+                  ),
                   e('div', null,
                     e('label', { className: 'block text-sm font-medium text-slate-700 mb-2' }, 'Asset Type'),
                     e('select', {
@@ -218,7 +236,7 @@
                     )
                   ),
                   e('div', null,
-                    e('label', { className: 'block text-sm font-medium text-slate-700 mb-2' }, '50 EMA Status'),
+                    e('label', { className: 'block text-sm font-medium text-slate-700 mb-2' }, 'Status'),
                     e('select', {
                       value: breakoutFilter,
                       onChange: (ev) => setBreakoutFilter(ev.target.value),
@@ -251,11 +269,11 @@
                 ),
                 e('div', { className: 'bg-yellow-50 rounded-lg shadow p-4 border-2 border-yellow-200' },
                   e('div', { className: 'text-2xl font-bold text-yellow-700' }, near50.length),
-                  e('div', { className: 'text-sm text-yellow-700' }, 'Near 50 EMA')
+                  e('div', { className: 'text-sm text-yellow-700' }, `Near ${emaFilter} EMA`)
                 ),
                 e('div', { className: 'bg-green-50 rounded-lg shadow p-4 border-2 border-green-200' },
                   e('div', { className: 'text-2xl font-bold text-green-700' }, above50.length),
-                  e('div', { className: 'text-sm text-green-700' }, 'Above 50 EMA')
+                  e('div', { className: 'text-sm text-green-700' }, `Above ${emaFilter} EMA`)
                 ),
                 e('div', { className: 'bg-blue-50 rounded-lg shadow p-4 border-2 border-blue-200' },
                   e('div', { className: 'text-2xl font-bold text-blue-700' }, above200.length),
@@ -281,18 +299,18 @@
                         }, 'Price ' + (sortConfig.key === 'currentPrice' ? (sortConfig.direction === 'ascending' ? '▲' : '▼') : '')),
                         e('th', {
                           className: 'px-4 py-3 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider cursor-pointer hover:bg-slate-200',
-                          onClick: () => sortData('ema50Distance')
-                        }, '50 EMA Distance ' + (sortConfig.key === 'ema50Distance' ? (sortConfig.direction === 'ascending' ? '▲' : '▼') : '')),
-                        e('th', {
-                          className: 'px-4 py-3 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider cursor-pointer hover:bg-slate-200',
-                          onClick: () => sortData('ema200Distance')
-                        }, '200 EMA Distance ' + (sortConfig.key === 'ema200Distance' ? (sortConfig.direction === 'ascending' ? '▲' : '▼') : '')),
-                        e('th', { className: 'px-4 py-3 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider' }, 'Status')
+                          onClick: () => sortData(emaDistanceKey)
+                        }, `${emaFilter} EMA Distance ` + (sortConfig.key === emaDistanceKey ? (sortConfig.direction === 'ascending' ? '▲' : '▼') : '')),
+                        e('th', { className: 'px-4 py-3 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider' }, `Status (${emaFilter} EMA)`)
                       )
                     ),
                     e('tbody', { className: 'divide-y divide-slate-200' },
                       getSortedData().map((item, index) => {
-                        const breakout = getBreakoutStatus(item.ema50Distance);
+                        const currentEmaDistance = item[emaDistanceKey];
+                        const currentEmaValue = item[emaKey];
+                        const priceDistance = item.currentPrice - currentEmaValue;
+                        const breakout = getBreakoutStatus(currentEmaDistance);
+
                         return e('tr', { key: index, className: 'hover:bg-slate-50' },
                           e('td', { className: 'px-4 py-3 font-semibold text-slate-900' }, item.symbol),
                           e('td', { className: 'px-4 py-3 text-slate-700' }, item.name),
@@ -303,14 +321,14 @@
                           ),
                           e('td', { className: 'px-4 py-3 font-mono text-slate-900' }, '$' + item.currentPrice.toFixed(2)),
                           e('td', { className: 'px-4 py-3' },
-                            e('span', {
-                              className: `font-semibold ${item.ema50Distance > 0 ? 'text-green-600' : 'text-red-600'}`
-                            }, (item.ema50Distance > 0 ? '+' : '') + item.ema50Distance.toFixed(2) + '%')
-                          ),
-                          e('td', { className: 'px-4 py-3' },
-                            e('span', {
-                              className: `font-semibold ${item.ema200Distance > 0 ? 'text-green-600' : 'text-red-600'}`
-                            }, (item.ema200Distance > 0 ? '+' : '') + item.ema200Distance.toFixed(2) + '%')
+                            e('div', { className: 'flex items-center gap-2' },
+                              e('span', {
+                                className: `font-semibold ${priceDistance > 0 ? 'text-green-600' : 'text-red-600'}`
+                              },
+                                e('span', { className: 'text-lg' }, priceDistance > 0 ? '↑' : '↓'),
+                                ' $' + Math.abs(priceDistance).toFixed(2)
+                              )
+                            )
                           ),
                           e('td', { className: 'px-4 py-3' },
                             e('span', {
