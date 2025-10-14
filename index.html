@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA Breakout Scanner - Comprehensive</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        // Sample data - replace this with your actual data
+        const SAMPLE_DATA = {
+          "lastUpdate": "2025-01-15T10:30:00Z",
+          "source": "Sample Data",
+          "data": [
+            {
+              "symbol": "AAPL",
+              "name": "Apple Inc.",
+              "type": "stock",
+              "index": "SPY",
+              "price": 185.50,
+              "ema50Distance": -1.5,
+              "ema200Distance": 5.2
+            },
+            {
+              "symbol": "MSFT",
+              "name": "Microsoft Corporation",
+              "type": "stock",
+              "index": "SPY",
+              "price": 378.90,
+              "ema50Distance": 2.3,
+              "ema200Distance": 8.7
+            },
+            {
+              "symbol": "GOOGL",
+              "name": "Alphabet Inc.",
+              "type": "stock",
+              "index": "SPY",
+              "price": 142.50,
+              "ema50Distance": -2.8,
+              "ema200Distance": 3.1
+            },
+            {
+              "symbol": "NVDA",
+              "name": "NVIDIA Corporation",
+              "type": "stock",
+              "index": "NASDAQ",
+              "price": 495.20,
+              "ema50Distance": 4.5,
+              "ema200Distance": 12.3
+            },
+            {
+              "symbol": "BTC",
+              "name": "Bitcoin",
+              "type": "crypto",
+              "index": "CRYPTO",
+              "price": 43250.00,
+              "ema50Distance": -2.1,
+              "ema200Distance": -5.4
+            },
+            {
+              "symbol": "ETH",
+              "name": "Ethereum",
+              "type": "crypto",
+              "index": "CRYPTO",
+              "price": 2280.50,
+              "ema50Distance": 1.8,
+              "ema200Distance": 6.2
+            },
+            {
+              "symbol": "TSLA",
+              "name": "Tesla Inc.",
+              "type": "stock",
+              "index": "SPY",
+              "price": 238.45,
+              "ema50Distance": -0.9,
+              "ema200Distance": -8.5
+            }
+          ]
+        };
+
+        const { useState, useEffect } = React;
+
+        const EMADashboard = () => {
+          const [data, setData] = useState([]);
+          const [filteredData, setFilteredData] = useState([]);
+          const [lastUpdate, setLastUpdate] = useState(null);
+          const [source, setSource] = useState('');
+          const [loading, setLoading] = useState(true);
+          const [error, setError] = useState(null);
+          const [sortConfig, setSortConfig] = useState({ key: 'ema50Distance', direction: 'ascending' });
+
+          // Filters
+          const [typeFilter, setTypeFilter] = useState('all');
+          const [indexFilter, setIndexFilter] = useState('all');
+          const [breakoutFilter, setBreoutFilter] = useState('all');
+          const [searchTerm, setSearchTerm] = useState('');
+
+          useEffect(() => {
+            loadData();
+            const interval = setInterval(loadData, 5 * 60 * 1000);
+            return () => clearInterval(interval);
+          }, []);
+
+          useEffect(() => {
+            applyFilters();
+          }, [data, typeFilter, indexFilter, breakoutFilter, searchTerm]);
+
+          const loadData = async () => {
+            try {
+              setLoading(true);
+              setError(null);
+
+              const response = await fetch(`ema_scan_results.json?t=${Date.now()}`);
+
+              if (!response.ok) {
+                throw new Error('Could not load data');
+              }
+
+              const jsonData = await response.json();
+
+              if (jsonData.data && Array.isArray(jsonData.data)) {
+                setData(jsonData.data);
+                setLastUpdate(new Date(jsonData.lastUpdate));
+                setSource(jsonData.source || 'Unknown');
+              }
+
+              setLoading(false);
+            } catch (err) {
+              setError('Failed to load scan results');
+              setLoading(false);
+            }
+          };
+
+          const applyFilters = () => {
+            let filtered = [...data];
+
+            if (typeFilter !== 'all') {
+              filtered = filtered.filter(d => d.type === typeFilter);
+            }
+
+            if (indexFilter !== 'all') {
+              filtered = filtered.filter(d => d.index === indexFilter);
+            }
+
+            if (breakoutFilter === 'near') {
+              filtered = filtered.filter(d => d.ema50Distance > -3 && d.ema50Distance < 0);
+            } else if (breakoutFilter === 'above') {
+              filtered = filtered.filter(d => d.ema50Distance > 0);
+            } else if (breakoutFilter === 'below') {
+              filtered = filtered.filter(d => d.ema50Distance <= -3);
+            }
+
+            if (searchTerm) {
+              const search = searchTerm.toLowerCase();
+              filtered = filtered.filter(d =>
+                d.name.toLowerCase().includes(search) ||
+                d.symbol.toLowerCase().includes(search)
+              );
+            }
+
+            setFilteredData(filtered);
+          };
+
+          const getBreakoutStatus = (distance) => {
+            if (distance > 0) {
+              return { status: 'Above', color: 'text-green-600', bg: 'bg-green-50', icon: '🟢' };
+            } else if (distance > -3 && distance <= 0) {
+              return { status: 'Near', color: 'text-yellow-600', bg: 'bg-yellow-50', icon: '🟡' };
+            } else {
+              return { status: 'Below', color: 'text-red-600', bg: 'bg-red-50', icon: '🔴' };
+            }
+          };
+
+          const sortData = (key) => {
+            let direction = 'ascending';
+            if (sortConfig.key === key && sortConfig.direction === 'ascending') {
+              direction = 'descending';
+            }
+            setSortConfig({ key, direction });
+          };
+
+          const getSortedData = () => {
+            const sortableData = [...filteredData];
+            sortableData.sort((a, b) => {
+              if (a[sortConfig.key] < b[sortConfig.key]) {
+                return sortConfig.direction === 'ascending' ? -1 : 1;
+              }
+              if (a[sortConfig.key] > b[sortConfig.key]) {
+                return sortConfig.direction === 'ascending' ? 1 : -1;
+              }
+              return 0;
+            });
+            return sortableData;
+          };
+
+          const resetFilters = () => {
+            setTypeFilter('all');
+            setIndexFilter('all');
+            setBreakoutFilter('all');
+            setSearchTerm('');
+          };
+
+          const near50 = filteredData.filter(d => d.ema50Distance > -3 && d.ema50Distance < 0);
+          const above50 = filteredData.filter(d => d.ema50Distance > 0);
+          const above200 = filteredData.filter(d => d.ema200Distance > 0);
+
+          if (loading) {
+            return (
+              <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-4">📊</div>
+                  <div className="text-xl font-semibold text-slate-700">Loading comprehensive scanner...</div>
+                </div>
+              </div>
+            );
+          }
+
+          if (error) {
+            return (
+              <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center p-6">
+                <div className="bg-red-50 border-2 border-red-200 rounded-xl p-8 max-w-md">
+                  <div className="text-4xl mb-4 text-center">❌</div>
+                  <h2 className="text-xl font-semibold text-red-900 mb-2 text-center">Error</h2>
+                  <p className="text-red-700 text-center">{error}</p>
+                  <button
+                    onClick={loadData}
+                    className="mt-4 w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700"
+                  >
+                    Retry
+                  </button>
+                </div>
+              </div>
+            );
+          }
+
+          return (
+            <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-6">
+              <div className="max-w-7xl mx-auto">
+                {/* Header */}
+                <div className="bg-white rounded-xl shadow-lg p-6 mb-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <h1 className="text-3xl font-bold text-slate-800">📈 EMA Breakout Scanner</h1>
+                      <p className="text-slate-600 mt-1">S&P 500 • NASDAQ-100 • Top 100 Crypto</p>
+                    </div>
+                    <button
+                      onClick={loadData}
+                      className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
+                    >
+                      🔄 Refresh
+                    </button>
+                  </div>
+
+                  {lastUpdate && (
+                    <div className="text-sm text-slate-600">
+                      <p>📅 Last updated: {lastUpdate.toLocaleString()}</p>
+                      <p>🔗 Source: {source}</p>
+                      <p>📊 Total symbols: {data.length} | Showing: {filteredData.length}</p>
+                    </div>
+                  )}
+                </div>
+
+                {/* Filters */}
+                <div className="bg-white rounded-xl shadow-lg p-6 mb-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h2 className="text-lg font-semibold text-slate-800">🔍 Filters</h2>
+                    <button
+                      onClick={resetFilters}
+                      className="text-sm text-blue-600 hover:text-blue-800 underline"
+                    >
+                      Reset All
+                    </button>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-slate-700 mb-2">Asset Type</label>
+                      <select
+                        value={typeFilter}
+                        onChange={(e) => setTypeFilter(e.target.value)}
+                        className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                      >
+                        <option value="all">All Types</option>
+                        <option value="stock">📊 Stocks Only</option>
+                        <option value="crypto">🪙 Crypto Only</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-slate-700 mb-2">Index</label>
+                      <select
+                        value={indexFilter}
+                        onChange={(e) => setIndexFilter(e.target.value)}
+                        className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                      >
+                        <option value="all">All Indices</option>
+                        <option value="SPY">S&P 500</option>
+                        <option value="NASDAQ">NASDAQ-100</option>
+                        <option value="CRYPTO">Crypto</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-slate-700 mb-2">50 EMA Status</label>
+                      <select
+                        value={breakoutFilter}
+                        onChange={(e) => setBreakoutFilter(e.target.value)}
+                        className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                      >
+                        <option value="all">All Status</option>
+                        <option value="near">🟡 Near Breakout</option>
+                        <option value="above">🟢 Above EMA</option>
+                        <option value="below">🔴 Below EMA</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-slate-700 mb-2">Search</label>
+                      <input
+                        type="text"
+                        placeholder="Symbol or name..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Summary Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+                  <div className="bg-white rounded-lg shadow p-4">
+                    <div className="text-2xl font-bold text-slate-800">{filteredData.length}</div>
+                    <div className="text-sm text-slate-600">Showing</div>
+                  </div>
+                  <div className="bg-yellow-50 rounded-lg shadow p-4 border-2 border-yellow-200">
+                    <div className="text-2xl font-bold text-yellow-700">{near50.length}</div>
+                    <div className="text-sm text-yellow-700">Near 50 EMA</div>
+                  </div>
+                  <div className="bg-green-50 rounded-lg shadow p-4 border-2 border-green-200">
+                    <div className="text-2xl font-bold text-green-700">{above50.length}</div>
+                    <div className="text-sm text-green-700">Above 50 EMA</div>
+                  </div>
+                  <div className="bg-blue-50 rounded-lg shadow p-4 border-2 border-blue-200">
+                    <div className="text-2xl font-bold text-blue-700">{above200.length}</div>
+                    <div className="text-sm text-blue-700">Above 200 EMA</div>
+                  </div>
+                </div>
+
+                {/* Data Table */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="overflow-x-auto">
+                    <table className="w-full">
+                      <thead className="bg-slate-100 border-b-2 border-slate-200">
+                        <tr>
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider cursor-pointer hover:bg-slate-200" onClick={() => sortData('symbol')}>
+                            Symbol {sortConfig.key === 'symbol' && (sortConfig.direction === 'ascending' ? '▲' : '▼')}
+                          </th>
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                            Name
+                          </th>
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                            Type
+                          </th>
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider cursor-pointer hover:bg-slate-200" onClick={() => sortData('price')}>
+                            Price {sortConfig.key === 'price' && (sortConfig.direction === 'ascending' ? '▲' : '▼')}
+                          </th>
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider cursor-pointer hover:bg-slate-200" onClick={() => sortData('ema50Distance')}>
+                            50 EMA Distance {sortConfig.key === 'ema50Distance' && (sortConfig.direction === 'ascending' ? '▲' : '▼')}
+                          </th>
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider cursor-pointer hover:bg-slate-200" onClick={() => sortData('ema200Distance')}>
+                            200 EMA Distance {sortConfig.key === 'ema200Distance' && (sortConfig.direction === 'ascending' ? '▲' : '▼')}
+                          </th>
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                            Status
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-slate-200">
+                        {getSortedData().map((item, index) => {
+                          const breakout = getBreakoutStatus(item.ema50Distance);
+                          return (
+                            <tr key={index} className="hover:bg-slate-50">
+                              <td className="px-4 py-3 font-semibold text-slate-900">{item.symbol}</td>
+                              <td className="px-4 py-3 text-slate-700">{item.name}</td>
+                              <td className="px-4 py-3">
+                                <span className={`px-2 py-1 rounded text-xs font-medium ${item.type === 'stock' ? 'bg-blue-100 text-blue-800' : 'bg-purple-100 text-purple-800'}`}>
+                                  {item.type === 'stock' ? '📊 Stock' : '🪙 Crypto'}
+                                </span>
+                              </td>
+                              <td className="px-4 py-3 font-mono text-slate-900">${item.price.toFixed(2)}</td>
+                              <td className="px-4 py-3">
+                                <span className={`font-semibold ${item.ema50Distance > 0 ? 'text-green-600' : 'text-red-600'}`}>
+                                  {item.ema50Distance > 0 ? '+' : ''}{item.ema50Distance.toFixed(2)}%
+                                </span>
+                              </td>
+                              <td className="px-4 py-3">
+                                <span className={`font-semibold ${item.ema200Distance > 0 ? 'text-green-600' : 'text-red-600'}`}>
+                                  {item.ema200Distance > 0 ? '+' : ''}{item.ema200Distance.toFixed(2)}%
+                                </span>
+                              </td>
+                              <td className="px-4 py-3">
+                                <span className={`px-3 py-1 rounded-full text-xs font-medium ${breakout.bg} ${breakout.color}`}>
+                                  {breakout.icon} {breakout.status}
+                                </span>
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+
+                  {filteredData.length === 0 && (
+                    <div className="text-center py-12">
+                      <div className="text-4xl mb-4">🔍</div>
+                      <p className="text-slate-600">No results found. Try adjusting your filters.</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        };
+
+        ReactDOM.render(<EMADashboard />, document.getElementById('root'));
+    </script>
+</body>
+</html>
