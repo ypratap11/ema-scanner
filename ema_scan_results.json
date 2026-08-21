@@ -1,10 +1,21 @@
 {
-  "lastUpdate": "2026-08-20T21:15:04.210749Z",
+  "lastUpdate": "2026-08-21T09:22:21.856041Z",
   "source": "Yahoo Finance (Free API)",
   "totalScanned": 201,
   "successful": 185,
   "failed": 16,
   "data": [
+    {
+      "symbol": "GOOGL",
+      "type": "stock",
+      "name": "GOOGL",
+      "index": "NASDAQ",
+      "currentPrice": 340.6700134277344,
+      "ema50": 350.63756522086936,
+      "ema200": 335.22687503716674,
+      "ema50Distance": -2.8426936477431752,
+      "ema200Distance": 1.6237177851460018
+    },
     {
       "symbol": "GOOG",
       "type": "stock",
@@ -15,39 +26,6 @@
       "ema200": 334.01053310959145,
       "ema50Distance": -3.046535366863753,
       "ema200Distance": 1.2542955033292917
-    },
-    {
-      "symbol": "AVGO",
-      "type": "stock",
-      "name": "AVGO",
-      "index": "NASDAQ",
-      "currentPrice": 364.0299987792969,
-      "ema50": 389.07363439283085,
-      "ema200": 377.93091590484903,
-      "ema50Distance": -6.436734180823084,
-      "ema200Distance": -3.678163532155163
-    },
-    {
-      "symbol": "AMZN",
-      "type": "stock",
-      "name": "AMZN",
-      "index": "NASDAQ",
-      "currentPrice": 260.1099853515625,
-      "ema50": 252.77268949106184,
-      "ema200": 245.55347057391907,
-      "ema50Distance": 2.902724924624466,
-      "ema200Distance": 5.928042777657046
-    },
-    {
-      "symbol": "TSLA",
-      "type": "stock",
-      "name": "TSLA",
-      "index": "NASDAQ",
-      "currentPrice": 345.1300048828125,
-      "ema50": 355.0882252532164,
-      "ema200": 399.1804794999178,
-      "ema50Distance": -2.804435535225825,
-      "ema200Distance": -13.540360161102624
     },
     {
       "symbol": "MSFT",
@@ -61,6 +39,39 @@
       "ema200Distance": 10.144244539774272
     },
     {
+      "symbol": "NVDA",
+      "type": "stock",
+      "name": "NVDA",
+      "index": "NASDAQ",
+      "currentPrice": 216.85000610351562,
+      "ema50": 209.48301602195693,
+      "ema200": 201.9732915692206,
+      "ema50Distance": 3.5167481457239127,
+      "ema200Distance": 7.365684055902237
+    },
+    {
+      "symbol": "TSLA",
+      "type": "stock",
+      "name": "TSLA",
+      "index": "NASDAQ",
+      "currentPrice": 345.1300048828125,
+      "ema50": 355.0882252532164,
+      "ema200": 399.1804794999178,
+      "ema50Distance": -2.804435535225825,
+      "ema200Distance": -13.540360161102624
+    },
+    {
+      "symbol": "AMZN",
+      "type": "stock",
+      "name": "AMZN",
+      "index": "NASDAQ",
+      "currentPrice": 260.1099853515625,
+      "ema50": 252.77268949106184,
+      "ema200": 245.55347057391907,
+      "ema50Distance": 2.902724924624466,
+      "ema200Distance": 5.928042777657046
+    },
+    {
       "symbol": "META",
       "type": "stock",
       "name": "META",
@@ -72,26 +83,15 @@
       "ema200Distance": -11.515814053968509
     },
     {
-      "symbol": "GOOGL",
+      "symbol": "AVGO",
       "type": "stock",
-      "name": "GOOGL",
+      "name": "AVGO",
       "index": "NASDAQ",
-      "currentPrice": 340.6700134277344,
-      "ema50": 350.63756522086936,
-      "ema200": 335.22687503716674,
-      "ema50Distance": -2.8426936477431752,
-      "ema200Distance": 1.6237177851460018
-    },
-    {
-      "symbol": "COST",
-      "type": "stock",
-      "name": "COST",
-      "index": "NASDAQ",
-      "currentPrice": 933.510009765625,
-      "ema50": 953.0189085852038,
-      "ema200": 960.0723604713871,
-      "ema50Distance": -2.047063142591848,
-      "ema200Distance": -2.766702990253802
+      "currentPrice": 364.0299987792969,
+      "ema50": 389.07363439283085,
+      "ema200": 377.93091590484903,
+      "ema50Distance": -6.436734180823084,
+      "ema200Distance": -3.678163532155163
     },
     {
       "symbol": "AAPL",
@@ -116,15 +116,15 @@
       "ema200Distance": 16.339208301949025
     },
     {
-      "symbol": "NVDA",
+      "symbol": "COST",
       "type": "stock",
-      "name": "NVDA",
+      "name": "COST",
       "index": "NASDAQ",
-      "currentPrice": 216.85000610351562,
-      "ema50": 209.48301602195693,
-      "ema200": 201.9732915692206,
-      "ema50Distance": 3.5167481457239127,
-      "ema200Distance": 7.365684055902237
+      "currentPrice": 933.510009765625,
+      "ema50": 953.0189085852038,
+      "ema200": 960.0723604713871,
+      "ema50Distance": -2.047063142591848,
+      "ema200Distance": -2.766702990253802
     },
     {
       "symbol": "NFLX",
@@ -138,6 +138,17 @@
       "ema200Distance": -8.278872230909046
     },
     {
+      "symbol": "AMD",
+      "type": "stock",
+      "name": "AMD",
+      "index": "NASDAQ",
+      "currentPrice": 469.4599914550781,
+      "ema50": 493.74773652321244,
+      "ema200": 376.6390800630958,
+      "ema50Distance": -4.919059526056679,
+      "ema200Distance": 24.644524773274377
+    },
+    {
       "symbol": "ADBE",
       "type": "stock",
       "name": "ADBE",
@@ -149,15 +160,26 @@
       "ema200Distance": 2.626652615137287
     },
     {
-      "symbol": "AMD",
+      "symbol": "TMUS",
       "type": "stock",
-      "name": "AMD",
+      "name": "TMUS",
       "index": "NASDAQ",
-      "currentPrice": 469.4549865722656,
-      "ema50": 493.74754025329827,
-      "ema200": 376.6390302632668,
-      "ema50Distance": -4.9200353825702665,
-      "ema200Distance": 24.64321242652983
+      "currentPrice": 181.22000122070312,
+      "ema50": 181.68661412331315,
+      "ema200": 192.57101246375265,
+      "ema50Distance": -0.25682293924709676,
+      "ema200Distance": -5.894454776876717
+    },
+    {
+      "symbol": "PEP",
+      "type": "stock",
+      "name": "PEP",
+      "index": "NASDAQ",
+      "currentPrice": 142.0800018310547,
+      "ema50": 140.30008957617565,
+      "ema200": 146.28464014546577,
+      "ema50Distance": 1.2686465562893576,
+      "ema200Distance": -2.8742855779184904
     },
     {
       "symbol": "CSCO",
@@ -171,15 +193,15 @@
       "ema200Distance": 11.57335249156404
     },
     {
-      "symbol": "TMUS",
+      "symbol": "TXN",
       "type": "stock",
-      "name": "TMUS",
+      "name": "TXN",
       "index": "NASDAQ",
-      "currentPrice": 181.22000122070312,
-      "ema50": 181.68661412331315,
-      "ema200": 192.57101246375265,
-      "ema50Distance": -0.25682293924709676,
-      "ema200Distance": -5.894454776876717
+      "currentPrice": 265.6000061035156,
+      "ema50": 283.9634533331795,
+      "ema200": 245.38509308502802,
+      "ema50Distance": -6.466834733171694,
+      "ema200Distance": 8.23803628995628
     },
     {
       "symbol": "LIN",
@@ -204,39 +226,6 @@
       "ema200Distance": -13.938309358129844
     },
     {
-      "symbol": "QCOM",
-      "type": "stock",
-      "name": "QCOM",
-      "index": "NASDAQ",
-      "currentPrice": 160.74000549316406,
-      "ema50": 173.21864277929546,
-      "ema200": 173.7411599992773,
-      "ema50Distance": -7.20398052190659,
-      "ema200Distance": -7.483059573314302
-    },
-    {
-      "symbol": "PEP",
-      "type": "stock",
-      "name": "PEP",
-      "index": "NASDAQ",
-      "currentPrice": 142.0800018310547,
-      "ema50": 140.30008957617565,
-      "ema200": 146.28464014546577,
-      "ema50Distance": 1.2686465562893576,
-      "ema200Distance": -2.8742855779184904
-    },
-    {
-      "symbol": "TXN",
-      "type": "stock",
-      "name": "TXN",
-      "index": "NASDAQ",
-      "currentPrice": 265.6000061035156,
-      "ema50": 283.9634533331795,
-      "ema200": 245.38509308502802,
-      "ema50Distance": -6.466834733171694,
-      "ema200Distance": 8.23803628995628
-    },
-    {
       "symbol": "CMCSA",
       "type": "stock",
       "name": "CMCSA",
@@ -259,26 +248,15 @@
       "ema200Distance": 23.10562037398533
     },
     {
-      "symbol": "PANW",
+      "symbol": "QCOM",
       "type": "stock",
-      "name": "PANW",
+      "name": "QCOM",
       "index": "NASDAQ",
-      "currentPrice": 349.55999755859375,
-      "ema50": 336.80713405790345,
-      "ema200": 254.46116792081324,
-      "ema50Distance": 3.7863994586580936,
-      "ema200Distance": 37.37262955083767
-    },
-    {
-      "symbol": "SBUX",
-      "type": "stock",
-      "name": "SBUX",
-      "index": "NASDAQ",
-      "currentPrice": 103.98999786376953,
-      "ema50": 104.21130845756429,
-      "ema200": 97.3800643294406,
-      "ema50Distance": -0.212367157720579,
-      "ema200Distance": 6.787768707943409
+      "currentPrice": 160.74000549316406,
+      "ema50": 173.21864277929546,
+      "ema200": 173.7411599992773,
+      "ema50Distance": -7.20398052190659,
+      "ema200Distance": -7.483059573314302
     },
     {
       "symbol": "AMAT",
@@ -292,15 +270,26 @@
       "ema200Distance": 16.987737947693553
     },
     {
-      "symbol": "BKNG",
+      "symbol": "HON",
       "type": "stock",
-      "name": "BKNG",
+      "name": "HON",
       "index": "NASDAQ",
-      "currentPrice": 209.8699951171875,
-      "ema50": 190.35047051738638,
-      "ema200": 185.91769253257954,
-      "ema50Distance": 10.25451870265707,
-      "ema200Distance": 12.88328305839459
+      "currentPrice": 218.32000732421875,
+      "ema50": 231.6964827934606,
+      "ema200": 229.2707698877481,
+      "ema50Distance": -5.773275152029797,
+      "ema200Distance": -4.776344829692366
+    },
+    {
+      "symbol": "SBUX",
+      "type": "stock",
+      "name": "SBUX",
+      "index": "NASDAQ",
+      "currentPrice": 103.98999786376953,
+      "ema50": 104.21130845756429,
+      "ema200": 97.3800643294406,
+      "ema50Distance": -0.212367157720579,
+      "ema200Distance": 6.787768707943409
     },
     {
       "symbol": "ISRG",
@@ -314,26 +303,37 @@
       "ema200Distance": -17.350712449399307
     },
     {
-      "symbol": "ADI",
+      "symbol": "BKNG",
       "type": "stock",
-      "name": "ADI",
+      "name": "BKNG",
       "index": "NASDAQ",
-      "currentPrice": 370.239990234375,
-      "ema50": 384.2387127609044,
-      "ema200": 347.7705136494055,
-      "ema50Distance": -3.643235848346232,
-      "ema200Distance": 6.461006814287155
+      "currentPrice": 209.8699951171875,
+      "ema50": 190.35047051738638,
+      "ema200": 185.91769253257954,
+      "ema50Distance": 10.25451870265707,
+      "ema200Distance": 12.88328305839459
     },
     {
-      "symbol": "HON",
+      "symbol": "PANW",
       "type": "stock",
-      "name": "HON",
+      "name": "PANW",
       "index": "NASDAQ",
-      "currentPrice": 218.32000732421875,
-      "ema50": 231.6964827934606,
-      "ema200": 229.2707698877481,
-      "ema50Distance": -5.773275152029797,
-      "ema200Distance": -4.776344829692366
+      "currentPrice": 349.55999755859375,
+      "ema50": 336.80713405790345,
+      "ema200": 254.46116792081324,
+      "ema50Distance": 3.7863994586580936,
+      "ema200Distance": 37.37262955083767
+    },
+    {
+      "symbol": "VRTX",
+      "type": "stock",
+      "name": "VRTX",
+      "index": "NASDAQ",
+      "currentPrice": 540.260009765625,
+      "ema50": 489.66787144137214,
+      "ema200": 462.0012559643813,
+      "ema50Distance": 10.331929308600808,
+      "ema200Distance": 16.939078149882167
     },
     {
       "symbol": "GILD",
@@ -347,15 +347,15 @@
       "ema200Distance": 8.749400729822659
     },
     {
-      "symbol": "VRTX",
+      "symbol": "ADI",
       "type": "stock",
-      "name": "VRTX",
+      "name": "ADI",
       "index": "NASDAQ",
-      "currentPrice": 540.260009765625,
-      "ema50": 489.66787144137214,
-      "ema200": 462.0012559643813,
-      "ema50Distance": 10.331929308600808,
-      "ema200Distance": 16.939078149882167
+      "currentPrice": 370.239990234375,
+      "ema50": 384.2387127609044,
+      "ema200": 347.7705136494055,
+      "ema50Distance": -3.643235848346232,
+      "ema200Distance": 6.461006814287155
     },
     {
       "symbol": "ADP",
@@ -380,6 +380,17 @@
       "ema200Distance": 49.96732020202869
     },
     {
+      "symbol": "LRCX",
+      "type": "stock",
+      "name": "LRCX",
+      "index": "NASDAQ",
+      "currentPrice": 310.5299987792969,
+      "ema50": 324.50873243021823,
+      "ema200": 268.3971854999441,
+      "ema50Distance": -4.307660242680008,
+      "ema200Distance": 15.697934090058313
+    },
+    {
       "symbol": "MDLZ",
       "type": "stock",
       "name": "MDLZ",
@@ -389,17 +400,6 @@
       "ema200": 59.48985071502742,
       "ema50Distance": 3.239773318914331,
       "ema200Distance": 7.81670926843722
-    },
-    {
-      "symbol": "REGN",
-      "type": "stock",
-      "name": "REGN",
-      "index": "NASDAQ",
-      "currentPrice": 826.6400146484375,
-      "ema50": 713.6102287378155,
-      "ema200": 704.2698824307256,
-      "ema50Distance": 15.839148790025229,
-      "ema200Distance": 17.375460071551284
     },
     {
       "symbol": "PYPL",
@@ -424,15 +424,15 @@
       "ema200Distance": 15.014750681830725
     },
     {
-      "symbol": "LRCX",
+      "symbol": "KLAC",
       "type": "stock",
-      "name": "LRCX",
+      "name": "KLAC",
       "index": "NASDAQ",
-      "currentPrice": 310.5299987792969,
-      "ema50": 324.50873243021823,
-      "ema200": 268.3971854999441,
-      "ema50Distance": -4.307660242680008,
-      "ema200Distance": 15.697934090058313
+      "currentPrice": 185.86000061035156,
+      "ema50": 209.63069688616716,
+      "ema200": 178.04072524364727,
+      "ema50Distance": -11.33932035188695,
+      "ema200Distance": 4.391846503660146
     },
     {
       "symbol": "SNPS",
@@ -446,6 +446,17 @@
       "ema200Distance": -9.976943353907327
     },
     {
+      "symbol": "REGN",
+      "type": "stock",
+      "name": "REGN",
+      "index": "NASDAQ",
+      "currentPrice": 826.6400146484375,
+      "ema50": 713.6102287378155,
+      "ema200": 704.2698824307256,
+      "ema50Distance": 15.839148790025229,
+      "ema200Distance": 17.375460071551284
+    },
+    {
       "symbol": "CDNS",
       "type": "stock",
       "name": "CDNS",
@@ -455,28 +466,6 @@
       "ema200": 336.623063339261,
       "ema50Distance": -9.94654635929148,
       "ema200Distance": -6.842391241076918
-    },
-    {
-      "symbol": "KLAC",
-      "type": "stock",
-      "name": "KLAC",
-      "index": "NASDAQ",
-      "currentPrice": 185.86000061035156,
-      "ema50": 209.63069688616716,
-      "ema200": 178.04072524364727,
-      "ema50Distance": -11.33932035188695,
-      "ema200Distance": 4.391846503660146
-    },
-    {
-      "symbol": "PDD",
-      "type": "stock",
-      "name": "PDD",
-      "index": "NASDAQ",
-      "currentPrice": 89.5199966430664,
-      "ema50": 85.70199871022359,
-      "ema200": 99.76683794286612,
-      "ema50Distance": 4.454969534318874,
-      "ema200Distance": -10.270788882441892
     },
     {
       "symbol": "MELI",
@@ -490,6 +479,28 @@
       "ema200Distance": 2.0904968367983474
     },
     {
+      "symbol": "PDD",
+      "type": "stock",
+      "name": "PDD",
+      "index": "NASDAQ",
+      "currentPrice": 89.5199966430664,
+      "ema50": 85.70199871022359,
+      "ema200": 99.76683794286612,
+      "ema50Distance": 4.454969534318874,
+      "ema200Distance": -10.270788882441892
+    },
+    {
+      "symbol": "CTAS",
+      "type": "stock",
+      "name": "CTAS",
+      "index": "NASDAQ",
+      "currentPrice": 203.52000427246094,
+      "ema50": 194.75402731801768,
+      "ema200": 185.92429456810564,
+      "ema50Distance": 4.50105041480304,
+      "ema200Distance": 9.463910967218887
+    },
+    {
       "symbol": "CRWD",
       "type": "stock",
       "name": "CRWD",
@@ -499,6 +510,39 @@
       "ema200": 153.563766781356,
       "ema50Distance": -2.1158240958714507,
       "ema200Distance": 23.948507077777396
+    },
+    {
+      "symbol": "MAR",
+      "type": "stock",
+      "name": "MAR",
+      "index": "NASDAQ",
+      "currentPrice": 356.6000061035156,
+      "ema50": 368.2240629184538,
+      "ema200": 342.4565226206807,
+      "ema50Distance": -3.1567890275308845,
+      "ema200Distance": 4.130008497020469
+    },
+    {
+      "symbol": "NXPI",
+      "type": "stock",
+      "name": "NXPI",
+      "index": "NASDAQ",
+      "currentPrice": 222.97000122070312,
+      "ema50": 257.59915837910063,
+      "ema200": 247.93859066908072,
+      "ema50Distance": -13.44303971189023,
+      "ema200Distance": -10.070473249443745
+    },
+    {
+      "symbol": "MRVL",
+      "type": "stock",
+      "name": "MRVL",
+      "index": "NASDAQ",
+      "currentPrice": 251.00999450683594,
+      "ema50": 226.66260958981778,
+      "ema200": 165.5845805864572,
+      "ema50Distance": 10.741685609760978,
+      "ema200Distance": 51.590198566692806
     },
     {
       "symbol": "FTNT",
@@ -523,28 +567,6 @@
       "ema200Distance": -2.4132484713774285
     },
     {
-      "symbol": "MRVL",
-      "type": "stock",
-      "name": "MRVL",
-      "index": "NASDAQ",
-      "currentPrice": 251.00999450683594,
-      "ema50": 226.66260958981778,
-      "ema200": 165.5845805864572,
-      "ema50Distance": 10.741685609760978,
-      "ema200Distance": 51.590198566692806
-    },
-    {
-      "symbol": "MAR",
-      "type": "stock",
-      "name": "MAR",
-      "index": "NASDAQ",
-      "currentPrice": 356.6000061035156,
-      "ema50": 368.2240629184538,
-      "ema200": 342.4565226206807,
-      "ema50Distance": -3.1567890275308845,
-      "ema200Distance": 4.130008497020469
-    },
-    {
       "symbol": "DASH",
       "type": "stock",
       "name": "DASH",
@@ -554,39 +576,6 @@
       "ema200": 192.1599153360797,
       "ema50Distance": 15.57963887320278,
       "ema200Distance": 15.7161212427957
-    },
-    {
-      "symbol": "CTAS",
-      "type": "stock",
-      "name": "CTAS",
-      "index": "NASDAQ",
-      "currentPrice": 203.52000427246094,
-      "ema50": 194.75402731801768,
-      "ema200": 185.92429456810564,
-      "ema50Distance": 4.50105041480304,
-      "ema200Distance": 9.463910967218887
-    },
-    {
-      "symbol": "ABNB",
-      "type": "stock",
-      "name": "ABNB",
-      "index": "NASDAQ",
-      "currentPrice": 185.0,
-      "ema50": 156.26922454667266,
-      "ema200": 140.09373044598448,
-      "ema50Distance": 18.38543419964714,
-      "ema200Distance": 32.05444627040601
-    },
-    {
-      "symbol": "CSX",
-      "type": "stock",
-      "name": "CSX",
-      "index": "NASDAQ",
-      "currentPrice": 50.970001220703125,
-      "ema50": 49.49102769899468,
-      "ema200": 43.91083665044121,
-      "ema50Distance": 2.9883669636112438,
-      "ema200Distance": 16.076133156964076
     },
     {
       "symbol": "ADSK",
@@ -600,15 +589,26 @@
       "ema200Distance": 1.7964707694107975
     },
     {
-      "symbol": "NXPI",
+      "symbol": "CSX",
       "type": "stock",
-      "name": "NXPI",
+      "name": "CSX",
       "index": "NASDAQ",
-      "currentPrice": 222.97000122070312,
-      "ema50": 257.59915837910063,
-      "ema200": 247.93859066908072,
-      "ema50Distance": -13.44303971189023,
-      "ema200Distance": -10.070473249443745
+      "currentPrice": 50.970001220703125,
+      "ema50": 49.49102769899468,
+      "ema200": 43.91083665044121,
+      "ema50Distance": 2.9883669636112438,
+      "ema200Distance": 16.076133156964076
+    },
+    {
+      "symbol": "ABNB",
+      "type": "stock",
+      "name": "ABNB",
+      "index": "NASDAQ",
+      "currentPrice": 185.0,
+      "ema50": 156.26922454667266,
+      "ema200": 140.09373044598448,
+      "ema50Distance": 18.38543419964714,
+      "ema200Distance": 32.05444627040601
     },
     {
       "symbol": "WDAY",
@@ -622,26 +622,26 @@
       "ema200Distance": 20.632002987039584
     },
     {
+      "symbol": "ROP",
+      "type": "stock",
+      "name": "ROP",
+      "index": "NASDAQ",
+      "currentPrice": 410.45001220703125,
+      "ema50": 372.866271480347,
+      "ema200": 377.9959261616583,
+      "ema50Distance": 10.079683683233123,
+      "ema200Distance": 8.585829581531849
+    },
+    {
       "symbol": "MNST",
       "type": "stock",
       "name": "MNST",
       "index": "NASDAQ",
       "currentPrice": 47.4900016784668,
-      "ema50": 81.27716692854257,
-      "ema200": 80.15924050399585,
-      "ema50Distance": -41.57030384656596,
-      "ema200Distance": -40.75542460248301
-    },
-    {
-      "symbol": "CPRT",
-      "type": "stock",
-      "name": "CPRT",
-      "index": "NASDAQ",
-      "currentPrice": 34.33000183105469,
-      "ema50": 30.004323187197592,
-      "ema200": 34.13299470046677,
-      "ema50Distance": 14.416851254631199,
-      "ema200Distance": 0.5771750539814958
+      "ema50": 77.73520969011275,
+      "ema200": 78.58647178682142,
+      "ema50Distance": -38.90799051320098,
+      "ema200Distance": -39.569749603607164
     },
     {
       "symbol": "PCAR",
@@ -666,15 +666,37 @@
       "ema200Distance": -16.218069710038645
     },
     {
-      "symbol": "ROP",
+      "symbol": "ROST",
       "type": "stock",
-      "name": "ROP",
+      "name": "ROST",
       "index": "NASDAQ",
-      "currentPrice": 410.45001220703125,
-      "ema50": 372.866271480347,
-      "ema200": 377.9959261616583,
-      "ema50Distance": 10.079683683233123,
-      "ema200Distance": 8.585829581531849
+      "currentPrice": 228.99000549316406,
+      "ema50": 237.68560350397357,
+      "ema200": 212.69595516483923,
+      "ema50Distance": -3.6584453928292437,
+      "ema200Distance": 7.660724114709633
+    },
+    {
+      "symbol": "AEP",
+      "type": "stock",
+      "name": "AEP",
+      "index": "NASDAQ",
+      "currentPrice": 125.69999694824219,
+      "ema50": 129.24873926945156,
+      "ema200": 127.6905158140501,
+      "ema50Distance": -2.74566880982191,
+      "ema200Distance": -1.558861950801903
+    },
+    {
+      "symbol": "CPRT",
+      "type": "stock",
+      "name": "CPRT",
+      "index": "NASDAQ",
+      "currentPrice": 34.33000183105469,
+      "ema50": 30.004323187197592,
+      "ema200": 34.13299470046677,
+      "ema50Distance": 14.416851254631199,
+      "ema200Distance": 0.5771750539814958
     },
     {
       "symbol": "ODFL",
@@ -688,15 +710,26 @@
       "ema200Distance": 3.6693890040797226
     },
     {
-      "symbol": "ROST",
+      "symbol": "FAST",
       "type": "stock",
-      "name": "ROST",
+      "name": "FAST",
       "index": "NASDAQ",
-      "currentPrice": 228.99000549316406,
-      "ema50": 237.68560350397357,
-      "ema200": 212.69595516483923,
-      "ema50Distance": -3.6584453928292437,
-      "ema200Distance": 7.660724114709633
+      "currentPrice": 50.65999984741211,
+      "ema50": 48.4676348117705,
+      "ema200": 45.41751936038179,
+      "ema50Distance": 4.523358823173243,
+      "ema200Distance": 11.54285958559726
+    },
+    {
+      "symbol": "KDP",
+      "type": "stock",
+      "name": "KDP",
+      "index": "NASDAQ",
+      "currentPrice": 31.65999984741211,
+      "ema50": 30.98097846119714,
+      "ema200": 29.133500410336502,
+      "ema50Distance": 2.1917364135720447,
+      "ema200Distance": 8.67214513014444
     },
     {
       "symbol": "PAYX",
@@ -708,17 +741,6 @@
       "ema200": 105.7456984237673,
       "ema50Distance": 8.61818136365061,
       "ema200Distance": 16.23168175556184
-    },
-    {
-      "symbol": "AEP",
-      "type": "stock",
-      "name": "AEP",
-      "index": "NASDAQ",
-      "currentPrice": 125.69999694824219,
-      "ema50": 129.24873926945156,
-      "ema200": 127.6905158140501,
-      "ema50Distance": -2.74566880982191,
-      "ema200Distance": -1.558861950801903
     },
     {
       "symbol": "MCHP",
@@ -743,15 +765,15 @@
       "ema200Distance": 28.178291818564034
     },
     {
-      "symbol": "FAST",
+      "symbol": "BKR",
       "type": "stock",
-      "name": "FAST",
+      "name": "BKR",
       "index": "NASDAQ",
-      "currentPrice": 50.65999984741211,
-      "ema50": 48.4676348117705,
-      "ema200": 45.41751936038179,
-      "ema50Distance": 4.523358823173243,
-      "ema200Distance": 11.54285958559726
+      "currentPrice": 62.779998779296875,
+      "ema50": 60.88213512659391,
+      "ema200": 58.221679795120096,
+      "ema50Distance": 3.1172751230827993,
+      "ema200Distance": 7.829246768930977
     },
     {
       "symbol": "VRSK",
@@ -763,39 +785,6 @@
       "ema200": 193.41945086861858,
       "ema50Distance": -0.20887956265877766,
       "ema200Distance": -2.9673635030304664
-    },
-    {
-      "symbol": "KDP",
-      "type": "stock",
-      "name": "KDP",
-      "index": "NASDAQ",
-      "currentPrice": 31.65999984741211,
-      "ema50": 30.98097846119714,
-      "ema200": 29.133500410336502,
-      "ema50Distance": 2.1917364135720447,
-      "ema200Distance": 8.67214513014444
-    },
-    {
-      "symbol": "GEHC",
-      "type": "stock",
-      "name": "GEHC",
-      "index": "NASDAQ",
-      "currentPrice": 74.05999755859375,
-      "ema50": 67.87521091127553,
-      "ema200": 70.51544625617395,
-      "ema50Distance": 9.111996212288446,
-      "ema200Distance": 5.026631029948937
-    },
-    {
-      "symbol": "BKR",
-      "type": "stock",
-      "name": "BKR",
-      "index": "NASDAQ",
-      "currentPrice": 62.779998779296875,
-      "ema50": 60.88213512659391,
-      "ema200": 58.221679795120096,
-      "ema50Distance": 3.1172751230827993,
-      "ema200Distance": 7.829246768930977
     },
     {
       "symbol": "AZN",
@@ -820,15 +809,26 @@
       "ema200Distance": 2.633327597937157
     },
     {
-      "symbol": "KHC",
+      "symbol": "TEAM",
       "type": "stock",
-      "name": "KHC",
+      "name": "TEAM",
       "index": "NASDAQ",
-      "currentPrice": 25.56999969482422,
-      "ema50": 25.122626022595114,
-      "ema200": 24.18135281131447,
-      "ema50Distance": 1.7807599883337843,
-      "ema200Distance": 5.7426352212188965
+      "currentPrice": 174.91000366210938,
+      "ema50": 115.8228862611841,
+      "ema200": 112.45997534638374,
+      "ema50Distance": 51.01506214210726,
+      "ema200Distance": 55.530892767294006
+    },
+    {
+      "symbol": "GEHC",
+      "type": "stock",
+      "name": "GEHC",
+      "index": "NASDAQ",
+      "currentPrice": 74.05999755859375,
+      "ema50": 67.76801712208353,
+      "ema200": 70.47312973198021,
+      "ema50Distance": 9.28458689469291,
+      "ema200Distance": 5.08969566167266
     },
     {
       "symbol": "LULU",
@@ -842,15 +842,15 @@
       "ema200Distance": -19.453506668456548
     },
     {
-      "symbol": "TEAM",
+      "symbol": "IDXX",
       "type": "stock",
-      "name": "TEAM",
+      "name": "IDXX",
       "index": "NASDAQ",
-      "currentPrice": 174.91000366210938,
-      "ema50": 115.8228862611841,
-      "ema200": 112.45997534638374,
-      "ema50Distance": 51.01506214210726,
-      "ema200Distance": 55.530892767294006
+      "currentPrice": 545.8599853515625,
+      "ema50": 561.8283965510201,
+      "ema200": 605.5321721318958,
+      "ema50Distance": -2.842222162048993,
+      "ema200Distance": -9.854503117521492
     },
     {
       "symbol": "XEL",
@@ -864,15 +864,15 @@
       "ema200Distance": -0.931554633595154
     },
     {
-      "symbol": "IDXX",
+      "symbol": "KHC",
       "type": "stock",
-      "name": "IDXX",
+      "name": "KHC",
       "index": "NASDAQ",
-      "currentPrice": 545.8599853515625,
-      "ema50": 561.8283965510201,
-      "ema200": 605.5321721318958,
-      "ema50Distance": -2.842222162048993,
-      "ema200Distance": -9.854503117521492
+      "currentPrice": 25.56999969482422,
+      "ema50": 25.122626022595114,
+      "ema200": 24.18135281131447,
+      "ema50Distance": 1.7807599883337843,
+      "ema200Distance": 5.7426352212188965
     },
     {
       "symbol": "CSGP",
@@ -886,17 +886,6 @@
       "ema200Distance": -24.401814697260164
     },
     {
-      "symbol": "ZS",
-      "type": "stock",
-      "name": "ZS",
-      "index": "NASDAQ",
-      "currentPrice": 174.9499969482422,
-      "ema50": 154.70032621472498,
-      "ema200": 186.05226686767438,
-      "ema50Distance": 13.08961088124051,
-      "ema200Distance": -5.967285487216577
-    },
-    {
       "symbol": "EXC",
       "type": "stock",
       "name": "EXC",
@@ -906,17 +895,6 @@
       "ema200": 46.180635749307285,
       "ema50Distance": -1.9459069454717082,
       "ema200Distance": -2.4266326303943946
-    },
-    {
-      "symbol": "TTWO",
-      "type": "stock",
-      "name": "TTWO",
-      "index": "NASDAQ",
-      "currentPrice": 240.14999389648438,
-      "ema50": 237.3832122496957,
-      "ema200": 233.36496434108412,
-      "ema50Distance": 1.165533830538271,
-      "ema200Distance": 2.907475667805609
     },
     {
       "symbol": "CCEP",
@@ -930,26 +908,26 @@
       "ema200Distance": 9.512837023457868
     },
     {
-      "symbol": "ON",
+      "symbol": "TTWO",
       "type": "stock",
-      "name": "ON",
+      "name": "TTWO",
       "index": "NASDAQ",
-      "currentPrice": 74.70999908447266,
-      "ema50": 90.2127881244617,
-      "ema200": 80.85424476134888,
-      "ema50Distance": -17.184691175491306,
-      "ema200Distance": -7.59916278361354
+      "currentPrice": 240.14999389648438,
+      "ema50": 237.3832122496957,
+      "ema200": 233.36496434108412,
+      "ema50Distance": 1.165533830538271,
+      "ema200Distance": 2.907475667805609
     },
     {
-      "symbol": "BIIB",
+      "symbol": "ZS",
       "type": "stock",
-      "name": "BIIB",
+      "name": "ZS",
       "index": "NASDAQ",
-      "currentPrice": 214.35000610351562,
-      "ema50": 204.93243713157352,
-      "ema200": 188.426037320365,
-      "ema50Distance": 4.595450629368012,
-      "ema200Distance": 13.758166945406956
+      "currentPrice": 174.9499969482422,
+      "ema50": 154.70032621472498,
+      "ema200": 186.05226686767438,
+      "ema50Distance": 13.08961088124051,
+      "ema200Distance": -5.967285487216577
     },
     {
       "symbol": "FANG",
@@ -963,15 +941,37 @@
       "ema200Distance": 16.93479538214016
     },
     {
+      "symbol": "BIIB",
+      "type": "stock",
+      "name": "BIIB",
+      "index": "NASDAQ",
+      "currentPrice": 214.35000610351562,
+      "ema50": 204.93243713157352,
+      "ema200": 188.426037320365,
+      "ema50Distance": 4.595450629368012,
+      "ema200Distance": 13.758166945406956
+    },
+    {
+      "symbol": "ON",
+      "type": "stock",
+      "name": "ON",
+      "index": "NASDAQ",
+      "currentPrice": 74.70999908447266,
+      "ema50": 90.2127881244617,
+      "ema200": 80.85424476134888,
+      "ema50Distance": -17.184691175491306,
+      "ema200Distance": -7.59916278361354
+    },
+    {
       "symbol": "CDW",
       "type": "stock",
       "name": "CDW",
       "index": "NASDAQ",
       "currentPrice": 133.5399932861328,
-      "ema50": 137.06192106590032,
-      "ema200": 135.2413857717661,
-      "ema50Distance": -2.5695888051022875,
-      "ema200Distance": -1.2580412984709834
+      "ema50": 136.46483233806265,
+      "ema200": 134.62934267094164,
+      "ema50Distance": -2.143291426676266,
+      "ema200Distance": -0.8091470723966863
     },
     {
       "symbol": "GFS",
@@ -985,6 +985,17 @@
       "ema200Distance": -14.040183686184646
     },
     {
+      "symbol": "ILMN",
+      "type": "stock",
+      "name": "ILMN",
+      "index": "NASDAQ",
+      "currentPrice": 213.24000549316406,
+      "ema50": 187.73599583279264,
+      "ema200": 154.00450122138793,
+      "ema50Distance": 13.58503975076075,
+      "ema200Distance": 38.463488925315644
+    },
+    {
       "symbol": "DDOG",
       "type": "stock",
       "name": "DDOG",
@@ -994,17 +1005,6 @@
       "ema200": 193.64887646520467,
       "ema50Distance": -6.260298121364157,
       "ema200Distance": 20.08848556038124
-    },
-    {
-      "symbol": "WBD",
-      "type": "stock",
-      "name": "WBD",
-      "index": "NASDAQ",
-      "currentPrice": 28.229999542236328,
-      "ema50": 26.77522444049136,
-      "ema200": 26.363384728986432,
-      "ema50Distance": 5.43328816898713,
-      "ema200Distance": 7.080330664816194
     },
     {
       "symbol": "MDB",
@@ -1018,37 +1018,15 @@
       "ema200Distance": 22.84386206090219
     },
     {
-      "symbol": "MRNA",
+      "symbol": "WBD",
       "type": "stock",
-      "name": "MRNA",
+      "name": "WBD",
       "index": "NASDAQ",
-      "currentPrice": 133.32000732421875,
-      "ema50": 66.39420194646124,
-      "ema200": 50.99941244638995,
-      "ema50Distance": 100.80067749247885,
-      "ema200Distance": 161.41479073776262
-    },
-    {
-      "symbol": "ILMN",
-      "type": "stock",
-      "name": "ILMN",
-      "index": "NASDAQ",
-      "currentPrice": 213.24000549316406,
-      "ema50": 187.73599583279264,
-      "ema200": 154.00450122138793,
-      "ema50Distance": 13.58503975076075,
-      "ema200Distance": 38.463488925315644
-    },
-    {
-      "symbol": "DLTR",
-      "type": "stock",
-      "name": "DLTR",
-      "index": "NASDAQ",
-      "currentPrice": 128.4499969482422,
-      "ema50": 124.02578517463071,
-      "ema200": 114.36353918998181,
-      "ema50Distance": 3.5671709454466254,
-      "ema200Distance": 12.31726287769026
+      "currentPrice": 28.229999542236328,
+      "ema50": 26.77522444049136,
+      "ema200": 26.363384728986432,
+      "ema50Distance": 5.43328816898713,
+      "ema200Distance": 7.080330664816194
     },
     {
       "symbol": "ARM",
@@ -1062,6 +1040,17 @@
       "ema200Distance": 10.597444921169007
     },
     {
+      "symbol": "DLTR",
+      "type": "stock",
+      "name": "DLTR",
+      "index": "NASDAQ",
+      "currentPrice": 128.4499969482422,
+      "ema50": 124.02578517463071,
+      "ema200": 114.36353918998181,
+      "ema50Distance": 3.5671709454466254,
+      "ema200Distance": 12.31726287769026
+    },
+    {
       "symbol": "SMCI",
       "type": "stock",
       "name": "SMCI",
@@ -1073,906 +1062,939 @@
       "ema200Distance": 7.430920706224618
     },
     {
+      "symbol": "BTC-USD",
+      "type": "crypto",
+      "name": "Bitcoin",
+      "index": "CRYPTO",
+      "currentPrice": 77624.8828125,
+      "ema50": 64861.694007644335,
+      "ema200": 68605.2729906536,
+      "ema50Distance": 19.677544658872844,
+      "ema200Distance": 13.147108711418124
+    },
+    {
       "symbol": "BNB-USD",
       "type": "crypto",
       "name": "BNB",
       "index": "CRYPTO",
-      "currentPrice": 654.2899780273438,
-      "ema50": 589.4683103384152,
-      "ema200": 628.4576777868155,
-      "ema50Distance": 10.996633161113317,
-      "ema200Distance": 4.110427981642241
-    },
-    {
-      "symbol": "ETH-USD",
-      "type": "crypto",
-      "name": "Ethereum",
-      "index": "CRYPTO",
-      "currentPrice": 2321.31005859375,
-      "ema50": 1885.2189090946044,
-      "ema200": 2000.0714744332836,
-      "ema50Distance": 23.13212260896443,
-      "ema200Distance": 16.061355219892267
+      "currentPrice": 671.8099975585938,
+      "ema50": 594.8080158931051,
+      "ema200": 626.052985561721,
+      "ema50Distance": 12.945686609463399,
+      "ema200Distance": 7.308808208272918
     },
     {
       "symbol": "SOL-USD",
       "type": "crypto",
       "name": "Solana",
       "index": "CRYPTO",
-      "currentPrice": 87.68000030517578,
-      "ema50": 77.07997239249286,
-      "ema200": 82.237101398915,
-      "ema50Distance": 13.751987168219717,
-      "ema200Distance": 6.618544201671718
+      "currentPrice": 91.05000305175781,
+      "ema50": 77.84755432591945,
+      "ema200": 81.38958878441098,
+      "ema50Distance": 16.95936223065468,
+      "ema200Distance": 11.869348907678907
     },
     {
       "symbol": "XRP-USD",
       "type": "crypto",
       "name": "Ripple",
       "index": "CRYPTO",
-      "currentPrice": 1.2539000511169434,
-      "ema50": 1.0673612746624408,
-      "ema200": 1.2552388478447458,
-      "ema50Distance": 17.47662959886722,
-      "ema200Distance": -0.10665673151378195
+      "currentPrice": 1.3624999523162842,
+      "ema50": 1.08590135554286,
+      "ema200": 1.2501769311282454,
+      "ema50Distance": 25.47179772467895,
+      "ema200Distance": 8.984569974961131
     },
     {
-      "symbol": "BTC-USD",
+      "symbol": "ETH-USD",
       "type": "crypto",
-      "name": "Bitcoin",
+      "name": "Ethereum",
       "index": "CRYPTO",
-      "currentPrice": 72683.28125,
-      "ema50": 64177.926784129646,
-      "ema200": 68928.77376802216,
-      "ema50Distance": 13.252772241270991,
-      "ema200Distance": 5.446937870407396
-    },
-    {
-      "symbol": "ADA-USD",
-      "type": "crypto",
-      "name": "Cardano",
-      "index": "CRYPTO",
-      "currentPrice": 0.19808000326156616,
-      "ema50": 0.1769761914579379,
-      "ema200": 0.21603901224226682,
-      "ema50Distance": 11.924661520724406,
-      "ema200Distance": -8.312854606352934
-    },
-    {
-      "symbol": "AVAX-USD",
-      "type": "crypto",
-      "name": "Avalanche",
-      "index": "CRYPTO",
-      "currentPrice": 7.203000068664551,
-      "ema50": 6.556931375763986,
-      "ema200": 7.909302233663568,
-      "ema50Distance": 9.853217242574662,
-      "ema200Distance": -8.930018655664139
+      "currentPrice": 2388.610107421875,
+      "ema50": 1913.045549616378,
+      "ema200": 1988.1809157733987,
+      "ema50Distance": 24.859029514527858,
+      "ema200Distance": 20.140480600715858
     },
     {
       "symbol": "USDC-USD",
       "type": "crypto",
       "name": "USD Coin",
       "index": "CRYPTO",
-      "currentPrice": 1.0001238584518433,
-      "ema50": 0.9998713832854892,
-      "ema200": 0.9998054896697042,
-      "ema50Distance": 0.025250764305751038,
-      "ema200Distance": 0.031843072020365217
+      "currentPrice": 1.0000083446502686,
+      "ema50": 0.9998733425695208,
+      "ema200": 0.9998322112396008,
+      "ema50Distance": 0.013501918193044122,
+      "ema200Distance": 0.01761629688339692
+    },
+    {
+      "symbol": "AVAX-USD",
+      "type": "crypto",
+      "name": "Avalanche",
+      "index": "CRYPTO",
+      "currentPrice": 7.449999809265137,
+      "ema50": 6.616308178980761,
+      "ema200": 7.8722751877668244,
+      "ema50Distance": 12.600556197380842,
+      "ema200Distance": -5.364083043716325
     },
     {
       "symbol": "DOGE-USD",
       "type": "crypto",
       "name": "Dogecoin",
       "index": "CRYPTO",
-      "currentPrice": 0.08023999631404877,
-      "ema50": 0.0718298398822723,
-      "ema200": 0.08702538211397233,
-      "ema50Distance": 11.708443796562188,
-      "ema200Distance": -7.797019254724005
+      "currentPrice": 0.08305999636650085,
+      "ema50": 0.07273846643293029,
+      "ema200": 0.0866875497574565,
+      "ema50Distance": 14.189919639133034,
+      "ema200Distance": -4.184630204804724
     },
     {
-      "symbol": "DOT-USD",
+      "symbol": "ADA-USD",
       "type": "crypto",
-      "name": "Polkadot",
+      "name": "Cardano",
       "index": "CRYPTO",
-      "currentPrice": 0.8424999713897705,
-      "ema50": 0.8074280639242979,
-      "ema200": 1.088287977470424,
-      "ema50Distance": 4.343657228733736,
-      "ema200Distance": -22.584831512331316
-    },
-    {
-      "symbol": "LTC-USD",
-      "type": "crypto",
-      "name": "Litecoin",
-      "index": "CRYPTO",
-      "currentPrice": 48.1150016784668,
-      "ema50": 45.074364100411955,
-      "ema200": 49.988066110649086,
-      "ema50Distance": 6.745824680479634,
-      "ema200Distance": -3.7470231955688034
+      "currentPrice": 0.20970000326633453,
+      "ema50": 0.1808160710403924,
+      "ema200": 0.21488765998159412,
+      "ema50Distance": 15.974206307961289,
+      "ema200Distance": -2.4141249970816974
     },
     {
       "symbol": "TRX-USD",
       "type": "crypto",
       "name": "TRON",
       "index": "CRYPTO",
-      "currentPrice": 0.33995696902275085,
-      "ema50": 0.32821777561858856,
-      "ema200": 0.32041663252268593,
-      "ema50Distance": 3.5766476638986298,
-      "ema200Distance": 6.098415162228335
+      "currentPrice": 0.33976584672927856,
+      "ema50": 0.329347882513093,
+      "ema200": 0.32092304632609825,
+      "ema50Distance": 3.1632097151167846,
+      "ema200Distance": 5.871438844573866
+    },
+    {
+      "symbol": "DOT-USD",
+      "type": "crypto",
+      "name": "Polkadot",
+      "index": "CRYPTO",
+      "currentPrice": 0.8676000237464905,
+      "ema50": 0.815499304673199,
+      "ema200": 1.079414724697587,
+      "ema50Distance": 6.38881220066401,
+      "ema200Distance": -19.623106495090596
     },
     {
       "symbol": "SHIB-USD",
       "type": "crypto",
       "name": "Shiba Inu",
       "index": "CRYPTO",
-      "currentPrice": 4.9300001592200715e-06,
-      "ema50": 4.435733190986665e-06,
-      "ema200": 5.305356828590197e-06,
-      "ema50Distance": 11.142847122494857,
-      "ema200Distance": -7.0750503971260645
+      "currentPrice": 5.140000212122686e-06,
+      "ema50": 4.465988941918564e-06,
+      "ema200": 5.304401073201441e-06,
+      "ema50Distance": 15.092094471567838,
+      "ema200Distance": -3.099329383468575
+    },
+    {
+      "symbol": "MRNA",
+      "type": "stock",
+      "name": "MRNA",
+      "index": "NASDAQ",
+      "currentPrice": 133.32000732421875,
+      "ema50": 66.39420194646124,
+      "ema200": 50.99941244638995,
+      "ema50Distance": 100.80067749247885,
+      "ema200Distance": 161.41479073776262
+    },
+    {
+      "symbol": "LTC-USD",
+      "type": "crypto",
+      "name": "Litecoin",
+      "index": "CRYPTO",
+      "currentPrice": 49.775001525878906,
+      "ema50": 45.42503386804565,
+      "ema200": 49.88499444253085,
+      "ema50Distance": 9.576146207109929,
+      "ema200Distance": -0.22049299169243303
     },
     {
       "symbol": "LINK-USD",
       "type": "crypto",
       "name": "Chainlink",
       "index": "CRYPTO",
-      "currentPrice": 10.609000205993652,
-      "ema50": 8.596435782563146,
-      "ema200": 8.804306336376191,
-      "ema50Distance": 23.411614700975896,
-      "ema200Distance": 20.497854125782997
+      "currentPrice": 11.357999801635742,
+      "ema50": 8.73756332548227,
+      "ema200": 8.7823338750786,
+      "ema50Distance": 29.990471926094305,
+      "ema200Distance": 29.32780697242726
     },
     {
       "symbol": "ATOM-USD",
       "type": "crypto",
       "name": "Cosmos",
       "index": "CRYPTO",
-      "currentPrice": 1.4910999536514282,
-      "ema50": 1.4438557912722627,
-      "ema200": 1.7144095566811535,
-      "ema50Distance": 3.272083172346181,
-      "ema200Distance": -13.02545253317533
+      "currentPrice": 1.566499948501587,
+      "ema50": 1.4546963519157592,
+      "ema200": 1.7196874132425994,
+      "ema50Distance": 7.685699935838033,
+      "ema200Distance": -8.90786683448279
     },
     {
       "symbol": "XLM-USD",
       "type": "crypto",
       "name": "Stellar",
       "index": "CRYPTO",
-      "currentPrice": 0.18057399988174438,
-      "ema50": 0.1744945034613042,
-      "ema200": 0.17652206421131098,
-      "ema50Distance": 3.484061847133401,
-      "ema200Distance": 2.295427310198979
-    },
-    {
-      "symbol": "ETC-USD",
-      "type": "crypto",
-      "name": "Ethereum Classic",
-      "index": "CRYPTO",
-      "currentPrice": 6.8979997634887695,
-      "ema50": 6.641641251951714,
-      "ema200": 7.799245830146022,
-      "ema50Distance": 3.8598668885002234,
-      "ema200Distance": -11.555554040542134
-    },
-    {
-      "symbol": "AAVE-USD",
-      "type": "crypto",
-      "name": "Aave",
-      "index": "CRYPTO",
-      "currentPrice": 97.5199966430664,
-      "ema50": 90.79184006400173,
-      "ema200": 96.51062348913104,
-      "ema50Distance": 7.410530036974475,
-      "ema200Distance": 1.0458674055183637
-    },
-    {
-      "symbol": "HBAR-USD",
-      "type": "crypto",
-      "name": "Hedera",
-      "index": "CRYPTO",
-      "currentPrice": 0.07281000167131424,
-      "ema50": 0.06870965145508573,
-      "ema200": 0.0807513541607163,
-      "ema50Distance": 5.967648109681994,
-      "ema200Distance": -9.834327327312298
-    },
-    {
-      "symbol": "XMR-USD",
-      "type": "crypto",
-      "name": "Monero",
-      "index": "CRYPTO",
-      "currentPrice": 409.123291015625,
-      "ema50": 366.46155269243,
-      "ema200": 360.20357020172725,
-      "ema50Distance": 11.641531835947013,
-      "ema200Distance": 13.581131576930488
+      "currentPrice": 0.1891999989748001,
+      "ema50": 0.17578177308054233,
+      "ema200": 0.17618195886339535,
+      "ema50Distance": 7.633456904607295,
+      "ema200Distance": 7.388974555276932
     },
     {
       "symbol": "BCH-USD",
       "type": "crypto",
       "name": "Bitcoin Cash",
       "index": "CRYPTO",
-      "currentPrice": 220.60000610351562,
-      "ema50": 215.54177921867048,
-      "ema200": 328.9716510906865,
-      "ema50Distance": 2.3467500839888173,
-      "ema200Distance": -32.94254827972895
+      "currentPrice": 255.82000732421875,
+      "ema50": 218.43507113242256,
+      "ema200": 326.23275750433766,
+      "ema50Distance": 17.114896430313703,
+      "ema200Distance": -21.583592867489
     },
     {
-      "symbol": "VET-USD",
+      "symbol": "XMR-USD",
       "type": "crypto",
-      "name": "VeChain",
+      "name": "Monero",
       "index": "CRYPTO",
-      "currentPrice": 0.005121000111103058,
-      "ema50": 0.0046599236233641605,
-      "ema200": 0.006004165400124097,
-      "ema50Distance": 9.894507399802194,
-      "ema200Distance": -14.709209859588231
+      "currentPrice": 411.1596374511719,
+      "ema50": 369.0784170822685,
+      "ema200": 359.04162080347885,
+      "ema50Distance": 11.401701758009693,
+      "ema200Distance": 14.515870480715042
     },
     {
-      "symbol": "ICP-USD",
+      "symbol": "ETC-USD",
       "type": "crypto",
-      "name": "Internet Computer",
+      "name": "Ethereum Classic",
       "index": "CRYPTO",
-      "currentPrice": 2.3805999755859375,
-      "ema50": 2.1886091635295672,
-      "ema200": 2.3940693539703877,
-      "ema50Distance": 8.772274888347214,
-      "ema200Distance": -0.5626143771529508
-    },
-    {
-      "symbol": "THETA-USD",
-      "type": "crypto",
-      "name": "Theta",
-      "index": "CRYPTO",
-      "currentPrice": 0.1624404489994049,
-      "ema50": 0.13722219579410297,
-      "ema200": 0.168679154872242,
-      "ema50Distance": 18.37767794004771,
-      "ema200Distance": -3.6985636296093034
-    },
-    {
-      "symbol": "FIL-USD",
-      "type": "crypto",
-      "name": "Filecoin",
-      "index": "CRYPTO",
-      "currentPrice": 0.7346000075340271,
-      "ema50": 0.7183977459599687,
-      "ema200": 0.8525318492799199,
-      "ema50Distance": 2.255333019232662,
-      "ema200Distance": -13.833130321817583
-    },
-    {
-      "symbol": "AXS-USD",
-      "type": "crypto",
-      "name": "Axie Infinity",
-      "index": "CRYPTO",
-      "currentPrice": 0.9549999833106995,
-      "ema50": 0.9105502109982915,
-      "ema200": 1.1324477861173992,
-      "ema50Distance": 4.881638791085996,
-      "ema200Distance": -15.669402596925025
-    },
-    {
-      "symbol": "MANA-USD",
-      "type": "crypto",
-      "name": "Decentraland",
-      "index": "CRYPTO",
-      "currentPrice": 0.07000000029802322,
-      "ema50": 0.06643843645120565,
-      "ema200": 0.08136478021130628,
-      "ema50Distance": 5.360697868670187,
-      "ema200Distance": -13.9676895626934
-    },
-    {
-      "symbol": "SNX-USD",
-      "type": "crypto",
-      "name": "Synthetix",
-      "index": "CRYPTO",
-      "currentPrice": 0.20983000099658966,
-      "ema50": 0.2131260826482534,
-      "ema200": 0.267726169318252,
-      "ema50Distance": -1.5465407193279266,
-      "ema200Distance": -21.62514350729752
-    },
-    {
-      "symbol": "SAND-USD",
-      "type": "crypto",
-      "name": "Sandbox",
-      "index": "CRYPTO",
-      "currentPrice": 0.04360000044107437,
-      "ema50": 0.04339716797054972,
-      "ema200": 0.06376430989167357,
-      "ema50Distance": 0.46738642176443534,
-      "ema200Distance": -31.623190911742753
-    },
-    {
-      "symbol": "EGLD-USD",
-      "type": "crypto",
-      "name": "MultiversX",
-      "index": "CRYPTO",
-      "currentPrice": 2.9700000286102295,
-      "ema50": 2.776759153442097,
-      "ema200": 3.506411946884539,
-      "ema50Distance": 6.959223486437032,
-      "ema200Distance": -15.298029050776929
-    },
-    {
-      "symbol": "XTZ-USD",
-      "type": "crypto",
-      "name": "Tezos",
-      "index": "CRYPTO",
-      "currentPrice": 0.22059999406337738,
-      "ema50": 0.21015207607894032,
-      "ema200": 0.30093389421682826,
-      "ema50Distance": 4.971598748571232,
-      "ema200Distance": -26.69486611420675
-    },
-    {
-      "symbol": "KLAY-USD",
-      "type": "crypto",
-      "name": "Klaytn",
-      "index": "CRYPTO",
-      "currentPrice": 0.025950275361537933,
-      "ema50": 0.0288444137259265,
-      "ema200": 0.041733977648484515,
-      "ema50Distance": -10.033618266219776,
-      "ema200Distance": -37.81978899756212
-    },
-    {
-      "symbol": "CHZ-USD",
-      "type": "crypto",
-      "name": "Chiliz",
-      "index": "CRYPTO",
-      "currentPrice": 0.013100000098347664,
-      "ema50": 0.014172695354646141,
-      "ema200": 0.02814814338545296,
-      "ema50Distance": -7.568745601709578,
-      "ema200Distance": -53.46051809186897
-    },
-    {
-      "symbol": "FLOW-USD",
-      "type": "crypto",
-      "name": "Flow",
-      "index": "CRYPTO",
-      "currentPrice": 0.028920000419020653,
-      "ema50": 0.028057475739119833,
-      "ema200": 0.034367540528198334,
-      "ema50Distance": 3.074134993185517,
-      "ema200Distance": -15.85082908306462
-    },
-    {
-      "symbol": "ZEC-USD",
-      "type": "crypto",
-      "name": "Zcash",
-      "index": "CRYPTO",
-      "currentPrice": 577.5999755859375,
-      "ema50": 494.6086889542201,
-      "ema200": 427.77452173609987,
-      "ema50Distance": 16.779180892917733,
-      "ema200Distance": 35.02439865791424
-    },
-    {
-      "symbol": "BAT-USD",
-      "type": "crypto",
-      "name": "Basic Attention",
-      "index": "CRYPTO",
-      "currentPrice": 0.06560000032186508,
-      "ema50": 0.06960079484795388,
-      "ema200": 0.09168178097087787,
-      "ema50Distance": -5.748202351465551,
-      "ema200Distance": -28.448160989910846
-    },
-    {
-      "symbol": "ENJ-USD",
-      "type": "crypto",
-      "name": "Enjin",
-      "index": "CRYPTO",
-      "currentPrice": 0.025971457362174988,
-      "ema50": 0.026020980691704824,
-      "ema200": 0.030269394666176872,
-      "ema50Distance": -0.19032076506487752,
-      "ema200Distance": -14.198953601158118
-    },
-    {
-      "symbol": "CRV-USD",
-      "type": "crypto",
-      "name": "Curve",
-      "index": "CRYPTO",
-      "currentPrice": 0.27619999647140503,
-      "ema50": 0.2257481915405162,
-      "ema200": 0.23265434293527187,
-      "ema50Distance": 22.348708349158127,
-      "ema200Distance": 18.716888318843136
-    },
-    {
-      "symbol": "LRC-USD",
-      "type": "crypto",
-      "name": "Loopring",
-      "index": "CRYPTO",
-      "currentPrice": 0.008134674280881882,
-      "ema50": 0.010371897439743335,
-      "ema200": 0.018566093611077982,
-      "ema50Distance": -21.570047060905146,
-      "ema200Distance": -56.1853212027968
-    },
-    {
-      "symbol": "1INCH-USD",
-      "type": "crypto",
-      "name": "1inch",
-      "index": "CRYPTO",
-      "currentPrice": 0.08799999952316284,
-      "ema50": 0.0800755197139461,
-      "ema200": 0.08755672033516425,
-      "ema50Distance": 9.896257729609973,
-      "ema200Distance": 0.5062766013867759
+      "currentPrice": 7.251999855041504,
+      "ema50": 6.689552007440574,
+      "ema200": 7.755359708131325,
+      "ema50Distance": 8.407855219233468,
+      "ema200Distance": -6.4904771929799585
     },
     {
       "symbol": "ALGO-USD",
       "type": "crypto",
       "name": "Algorand",
       "index": "CRYPTO",
-      "currentPrice": 0.08674000203609467,
-      "ema50": 0.08331539290410937,
-      "ema200": 0.09468544980408246,
-      "ema50Distance": 4.110415869882288,
-      "ema200Distance": -8.39141365904481
+      "currentPrice": 0.09036999940872192,
+      "ema50": 0.08403007187349537,
+      "ema200": 0.09480610052785693,
+      "ema50Distance": 7.54483174163068,
+      "ema200Distance": -4.679130450926565
+    },
+    {
+      "symbol": "AAVE-USD",
+      "type": "crypto",
+      "name": "Aave",
+      "index": "CRYPTO",
+      "currentPrice": 105.5199966430664,
+      "ema50": 91.60365990103655,
+      "ema200": 96.14407947835586,
+      "ema50Distance": 15.191900364094932,
+      "ema200Distance": 9.751944389692001
+    },
+    {
+      "symbol": "HBAR-USD",
+      "type": "crypto",
+      "name": "Hedera",
+      "index": "CRYPTO",
+      "currentPrice": 0.0751200020313263,
+      "ema50": 0.0693184317209457,
+      "ema200": 0.0803156655756167,
+      "ema50Distance": 8.369448307393759,
+      "ema200Distance": -6.469053710821486
+    },
+    {
+      "symbol": "VET-USD",
+      "type": "crypto",
+      "name": "VeChain",
+      "index": "CRYPTO",
+      "currentPrice": 0.005373000167310238,
+      "ema50": 0.004706313811493319,
+      "ema200": 0.005971820382448673,
+      "ema50Distance": 14.165786271812134,
+      "ema200Distance": -10.0274317844251
+    },
+    {
+      "symbol": "FIL-USD",
+      "type": "crypto",
+      "name": "Filecoin",
+      "index": "CRYPTO",
+      "currentPrice": 0.7598999738693237,
+      "ema50": 0.7247510983432022,
+      "ema200": 0.84894334180371,
+      "ema50Distance": 4.849785754926444,
+      "ema200Distance": -10.488729170688824
+    },
+    {
+      "symbol": "ICP-USD",
+      "type": "crypto",
+      "name": "Internet Computer",
+      "index": "CRYPTO",
+      "currentPrice": 2.431299924850464,
+      "ema50": 2.2049246552254798,
+      "ema200": 2.384665699588688,
+      "ema50Distance": 10.266802953492963,
+      "ema200Distance": 1.9555875387405257
+    },
+    {
+      "symbol": "SAND-USD",
+      "type": "crypto",
+      "name": "Sandbox",
+      "index": "CRYPTO",
+      "currentPrice": 0.04650000110268593,
+      "ema50": 0.04393313202088294,
+      "ema200": 0.06304868278690115,
+      "ema50Distance": 5.842672633908426,
+      "ema200Distance": -26.247466168561
+    },
+    {
+      "symbol": "THETA-USD",
+      "type": "crypto",
+      "name": "Theta",
+      "index": "CRYPTO",
+      "currentPrice": 0.1680770218372345,
+      "ema50": 0.13946848826953784,
+      "ema200": 0.1679430267752936,
+      "ema50Distance": 20.51254295694924,
+      "ema200Distance": 0.07978602298276964
+    },
+    {
+      "symbol": "AXS-USD",
+      "type": "crypto",
+      "name": "Axie Infinity",
+      "index": "CRYPTO",
+      "currentPrice": 0.9980000257492065,
+      "ema50": 0.919429467902972,
+      "ema200": 1.1191170275782638,
+      "ema50Distance": 8.54557751182782,
+      "ema200Distance": -10.822550175217232
+    },
+    {
+      "symbol": "MANA-USD",
+      "type": "crypto",
+      "name": "Decentraland",
+      "index": "CRYPTO",
+      "currentPrice": 0.0729999989271164,
+      "ema50": 0.06779151051562717,
+      "ema200": 0.08083219809770056,
+      "ema50Distance": 7.683098328792331,
+      "ema200Distance": -9.689454641722744
+    },
+    {
+      "symbol": "FLOW-USD",
+      "type": "crypto",
+      "name": "Flow",
+      "index": "CRYPTO",
+      "currentPrice": 0.031039999797940254,
+      "ema50": 0.028329423690760823,
+      "ema200": 0.034580960795102846,
+      "ema50Distance": 9.568059473315165,
+      "ema200Distance": -10.23962583961531
+    },
+    {
+      "symbol": "EGLD-USD",
+      "type": "crypto",
+      "name": "MultiversX",
+      "index": "CRYPTO",
+      "currentPrice": 3.0799999237060547,
+      "ema50": 2.801985061125616,
+      "ema200": 3.5088005374038906,
+      "ema50Distance": 9.922067980931864,
+      "ema200Distance": -12.220717852919025
+    },
+    {
+      "symbol": "XTZ-USD",
+      "type": "crypto",
+      "name": "Tezos",
+      "index": "CRYPTO",
+      "currentPrice": 0.22660000622272491,
+      "ema50": 0.21507980637334587,
+      "ema200": 0.2992227806350038,
+      "ema50Distance": 5.356244290727011,
+      "ema200Distance": -24.270469734343244
+    },
+    {
+      "symbol": "SNX-USD",
+      "type": "crypto",
+      "name": "Synthetix",
+      "index": "CRYPTO",
+      "currentPrice": 0.22307999432086945,
+      "ema50": 0.21670627070150594,
+      "ema200": 0.26525358954028444,
+      "ema50Distance": 2.9411809813952052,
+      "ema200Distance": -15.899349483830466
+    },
+    {
+      "symbol": "CHZ-USD",
+      "type": "crypto",
+      "name": "Chiliz",
+      "index": "CRYPTO",
+      "currentPrice": 0.013700000010430813,
+      "ema50": 0.014247208192159737,
+      "ema200": 0.027713277664200592,
+      "ema50Distance": -3.8408098930571786,
+      "ema200Distance": -50.56521218301011
+    },
+    {
+      "symbol": "ZEC-USD",
+      "type": "crypto",
+      "name": "Zcash",
+      "index": "CRYPTO",
+      "currentPrice": 627.8300170898438,
+      "ema50": 503.02517910340356,
+      "ema200": 426.2555681078304,
+      "ema50Distance": 24.810853048925587,
+      "ema200Distance": 47.289575565384936
+    },
+    {
+      "symbol": "KLAY-USD",
+      "type": "crypto",
+      "name": "Klaytn",
+      "index": "CRYPTO",
+      "currentPrice": 0.02868042141199112,
+      "ema50": 0.028936026271409083,
+      "ema200": 0.041058078976098096,
+      "ema50Distance": -0.8833447171373348,
+      "ema200Distance": -30.146704065995422
+    },
+    {
+      "symbol": "1INCH-USD",
+      "type": "crypto",
+      "name": "1inch",
+      "index": "CRYPTO",
+      "currentPrice": 0.09099999815225601,
+      "ema50": 0.08019316671900857,
+      "ema200": 0.08758657106779204,
+      "ema50Distance": 13.476000356880588,
+      "ema200Distance": 3.897203695555087
+    },
+    {
+      "symbol": "ENJ-USD",
+      "type": "crypto",
+      "name": "Enjin",
+      "index": "CRYPTO",
+      "currentPrice": 0.026997391134500504,
+      "ema50": 0.026274132999948928,
+      "ema200": 0.03024696151222165,
+      "ema50Distance": 2.7527383474574845,
+      "ema200Distance": -10.74346055027087
+    },
+    {
+      "symbol": "CRV-USD",
+      "type": "crypto",
+      "name": "Curve",
+      "index": "CRYPTO",
+      "currentPrice": 0.3131999969482422,
+      "ema50": 0.2300510459704169,
+      "ema200": 0.23191782986090234,
+      "ema50Distance": 36.143696120606954,
+      "ema200Distance": 35.04783014574194
     },
     {
       "symbol": "YFI-USD",
       "type": "crypto",
       "name": "Yearn.finance",
       "index": "CRYPTO",
-      "currentPrice": 2153.669921875,
-      "ema50": 2004.4993767274048,
-      "ema200": 2313.500386975951,
-      "ema50Distance": 7.441785559002506,
-      "ema200Distance": -6.908599021669954
+      "currentPrice": 2234.5,
+      "ema50": 2022.893524724249,
+      "ema200": 2300.98118011524,
+      "ema50Distance": 10.460583945197822,
+      "ema200Distance": -2.8892535362636234
+    },
+    {
+      "symbol": "LRC-USD",
+      "type": "crypto",
+      "name": "Loopring",
+      "index": "CRYPTO",
+      "currentPrice": 0.00846160389482975,
+      "ema50": 0.010318113087747025,
+      "ema200": 0.01832045904658453,
+      "ema50Distance": -17.99271995886456,
+      "ema200Distance": -53.813363118719224
     },
     {
       "symbol": "SUSHI-USD",
       "type": "crypto",
       "name": "SushiSwap",
       "index": "CRYPTO",
-      "currentPrice": 0.18170000612735748,
-      "ema50": 0.16209016748759966,
-      "ema200": 0.18903261983325462,
-      "ema50Distance": 12.098104989161682,
-      "ema200Distance": -3.8790203047311205
+      "currentPrice": 0.1875,
+      "ema50": 0.16331314513082304,
+      "ema200": 0.18803526102407445,
+      "ema50Distance": 14.81010903917252,
+      "ema200Distance": -0.28465992025076386
     },
     {
       "symbol": "ZRX-USD",
       "type": "crypto",
       "name": "0x",
       "index": "CRYPTO",
-      "currentPrice": 0.08516799658536911,
-      "ema50": 0.08089132557377146,
-      "ema200": 0.09478790200677895,
-      "ema50Distance": 5.2869340207528195,
-      "ema200Distance": -10.148874716861915
+      "currentPrice": 0.08962699770927429,
+      "ema50": 0.08174742467760183,
+      "ema200": 0.09481135186558817,
+      "ema50Distance": 9.638925094886078,
+      "ema200Distance": -5.468073236276198
     },
     {
       "symbol": "OMG-USD",
       "type": "crypto",
       "name": "OMG Network",
       "index": "CRYPTO",
-      "currentPrice": 0.046096090227365494,
-      "ema50": 0.04525234707732262,
-      "ema200": 0.05344727151968907,
-      "ema50Distance": 1.8645290344855976,
-      "ema200Distance": -13.7540815149292
+      "currentPrice": 0.04683254659175873,
+      "ema50": 0.0453837126308244,
+      "ema200": 0.05328454689297602,
+      "ema50Distance": 3.192409516427018,
+      "ema200Distance": -12.108576834061054
     },
     {
-      "symbol": "ANT-USD",
+      "symbol": "BAT-USD",
       "type": "crypto",
-      "name": "Aragon",
+      "name": "Basic Attention",
       "index": "CRYPTO",
-      "currentPrice": 0.09240811318159103,
-      "ema50": 0.0950021617707313,
-      "ema200": 0.07366191387030431,
-      "ema50Distance": -2.7305153280622005,
-      "ema200Distance": 25.44897128832811
-    },
-    {
-      "symbol": "STORJ-USD",
-      "type": "crypto",
-      "name": "Storj",
-      "index": "CRYPTO",
-      "currentPrice": 0.040800001472234726,
-      "ema50": 0.05550773291625208,
-      "ema200": 0.08161725925611155,
-      "ema50Distance": -26.49672517918865,
-      "ema200Distance": -50.01057148438907
-    },
-    {
-      "symbol": "BNT-USD",
-      "type": "crypto",
-      "name": "Bancor",
-      "index": "CRYPTO",
-      "currentPrice": 0.30570000410079956,
-      "ema50": 0.26985956737039557,
-      "ema200": 0.29123955784783156,
-      "ema50Distance": 13.281143625792307,
-      "ema200Distance": 4.965138101371301
-    },
-    {
-      "symbol": "REN-USD",
-      "type": "crypto",
-      "name": "Ren",
-      "index": "CRYPTO",
-      "currentPrice": 0.003421894973143935,
-      "ema50": 0.003301345505952338,
-      "ema200": 0.0035293376171894398,
-      "ema50Distance": 3.6515253242729697,
-      "ema200Distance": -3.0442722034358862
-    },
-    {
-      "symbol": "NMR-USD",
-      "type": "crypto",
-      "name": "Numeraire",
-      "index": "CRYPTO",
-      "currentPrice": 8.470000267028809,
-      "ema50": 8.793579058997341,
-      "ema200": 8.818937135970927,
-      "ema50Distance": -3.679716640944465,
-      "ema200Distance": -3.9566771319739313
-    },
-    {
-      "symbol": "RLC-USD",
-      "type": "crypto",
-      "name": "iExec RLC",
-      "index": "CRYPTO",
-      "currentPrice": 0.3005000054836273,
-      "ema50": 0.2819536598247658,
-      "ema200": 0.36837243181413964,
-      "ema50Distance": 6.577799227854711,
-      "ema200Distance": -18.424947273132805
+      "currentPrice": 0.06657999753952026,
+      "ema50": 0.07002282591346466,
+      "ema200": 0.09062317435568683,
+      "ema50Distance": -4.916722981444796,
+      "ema200Distance": -26.5309364708408
     },
     {
       "symbol": "BAL-USD",
       "type": "crypto",
       "name": "Balancer",
       "index": "CRYPTO",
-      "currentPrice": 0.11429999768733978,
-      "ema50": 0.10543805446886576,
-      "ema200": 0.13802487448720008,
-      "ema50Distance": 8.404881200734621,
-      "ema200Distance": -17.188841422971517
+      "currentPrice": 0.11640000343322754,
+      "ema50": 0.10585357403023402,
+      "ema200": 0.13382299647694537,
+      "ema50Distance": 9.963224671073686,
+      "ema200Distance": -13.019431265477166
+    },
+    {
+      "symbol": "REN-USD",
+      "type": "crypto",
+      "name": "Ren",
+      "index": "CRYPTO",
+      "currentPrice": 0.0034331080969423056,
+      "ema50": 0.0033423126811139812,
+      "ema200": 0.003507195512858339,
+      "ema50Distance": 2.7165446351375633,
+      "ema200Distance": -2.1124404283824116
+    },
+    {
+      "symbol": "BNT-USD",
+      "type": "crypto",
+      "name": "Bancor",
+      "index": "CRYPTO",
+      "currentPrice": 0.3190000057220459,
+      "ema50": 0.2725287858488105,
+      "ema200": 0.28966198422148004,
+      "ema50Distance": 17.051857376642772,
+      "ema200Distance": 10.128364472617005
+    },
+    {
+      "symbol": "ANT-USD",
+      "type": "crypto",
+      "name": "Aragon",
+      "index": "CRYPTO",
+      "currentPrice": 0.11463209241628647,
+      "ema50": 0.09577195876169368,
+      "ema200": 0.07406957623746152,
+      "ema50Distance": 19.692751300536575,
+      "ema200Distance": 54.76272207739458
+    },
+    {
+      "symbol": "STORJ-USD",
+      "type": "crypto",
+      "name": "Storj",
+      "index": "CRYPTO",
+      "currentPrice": 0.0408100001513958,
+      "ema50": 0.05522494455748834,
+      "ema200": 0.0811190648376044,
+      "ema50Distance": -26.10223427401869,
+      "ema200Distance": -49.69123444273548
     },
     {
       "symbol": "KNC-USD",
       "type": "crypto",
       "name": "Kyber Network",
       "index": "CRYPTO",
-      "currentPrice": 0.10809999704360962,
-      "ema50": 0.10540897883573447,
-      "ema200": 0.1282522674790414,
-      "ema50Distance": 2.552930725255138,
-      "ema200Distance": -15.712993486625878
+      "currentPrice": 0.11129999905824661,
+      "ema50": 0.10612379614904431,
+      "ema200": 0.12906118170328956,
+      "ema50Distance": 4.877513900777394,
+      "ema200Distance": -13.761831722473875
     },
     {
-      "symbol": "SKL-USD",
+      "symbol": "NMR-USD",
       "type": "crypto",
-      "name": "SKALE",
+      "name": "Numeraire",
       "index": "CRYPTO",
-      "currentPrice": 0.003596999915316701,
-      "ema50": 0.003641908398760783,
-      "ema200": 0.005232276854796527,
-      "ema50Distance": -1.2331030472749696,
-      "ema200Distance": -31.253639378442617
-    },
-    {
-      "symbol": "OCEAN-USD",
-      "type": "crypto",
-      "name": "Ocean Protocol",
-      "index": "CRYPTO",
-      "currentPrice": 0.12870000302791595,
-      "ema50": 0.10495954971513295,
-      "ema200": 0.11350302709249054,
-      "ema50Distance": 22.61866917037672,
-      "ema200Distance": 13.38904901896741
-    },
-    {
-      "symbol": "AUDIO-USD",
-      "type": "crypto",
-      "name": "Audius",
-      "index": "CRYPTO",
-      "currentPrice": 0.012400000356137753,
-      "ema50": 0.012589507931442138,
-      "ema200": 0.01673100120438675,
-      "ema50Distance": -1.505281829412039,
-      "ema200Distance": -25.88608293873913
+      "currentPrice": 8.739999771118164,
+      "ema50": 8.827889086539033,
+      "ema200": 8.79476329234986,
+      "ema50Distance": -0.9955869920804088,
+      "ema200Distance": -0.6226832878985115
     },
     {
       "symbol": "REP-USD",
       "type": "crypto",
       "name": "Augur",
       "index": "CRYPTO",
-      "currentPrice": 0.8793596029281616,
-      "ema50": 0.8319311314580591,
-      "ema200": 0.8549585352418506,
-      "ema50Distance": 5.701009335589889,
-      "ema200Distance": 2.8540644581562584
+      "currentPrice": 0.8126034736633301,
+      "ema50": 0.8291931514096018,
+      "ema200": 0.8510146186032702,
+      "ema50Distance": -2.000701250133315,
+      "ema200Distance": -4.513570519268225
     },
     {
-      "symbol": "API3-USD",
+      "symbol": "RLC-USD",
       "type": "crypto",
-      "name": "API3",
+      "name": "iExec RLC",
       "index": "CRYPTO",
-      "currentPrice": 0.21199999749660492,
-      "ema50": 0.20463797578575965,
-      "ema200": 0.2675836510057199,
-      "ema50Distance": 3.5975833334829033,
-      "ema200Distance": -20.77244005760532
+      "currentPrice": 0.30959999561309814,
+      "ema50": 0.284275878955365,
+      "ema200": 0.3660438257184098,
+      "ema50Distance": 8.908288930735967,
+      "ema200Distance": -15.419965080556441
     },
     {
-      "symbol": "COTI-USD",
+      "symbol": "OCEAN-USD",
       "type": "crypto",
-      "name": "COTI",
+      "name": "Ocean Protocol",
       "index": "CRYPTO",
-      "currentPrice": 0.009843000210821629,
-      "ema50": 0.010360493444040495,
-      "ema200": 0.011672135567966875,
-      "ema50Distance": -4.9948705244009055,
-      "ema200Distance": -15.670957096875604
+      "currentPrice": 0.12999999523162842,
+      "ema50": 0.10606665406189142,
+      "ema200": 0.1131864864842954,
+      "ema50Distance": 22.56443495971085,
+      "ema200Distance": 14.854696235902587
     },
     {
-      "symbol": "CTSI-USD",
+      "symbol": "SKL-USD",
       "type": "crypto",
-      "name": "Cartesi",
+      "name": "SKALE",
       "index": "CRYPTO",
-      "currentPrice": 0.02604999952018261,
-      "ema50": 0.02384449091350185,
-      "ema200": 0.026095224303402415,
-      "ema50Distance": 9.249552085978479,
-      "ema200Distance": -0.1733067426207497
-    },
-    {
-      "symbol": "CELR-USD",
-      "type": "crypto",
-      "name": "Celer Network",
-      "index": "CRYPTO",
-      "currentPrice": 0.002099999925121665,
-      "ema50": 0.0018483703882042964,
-      "ema200": 0.0022590821189677206,
-      "ema50Distance": 13.61358840864294,
-      "ema200Distance": -7.0418951356556985
-    },
-    {
-      "symbol": "INJ-USD",
-      "type": "crypto",
-      "name": "Injective",
-      "index": "CRYPTO",
-      "currentPrice": 4.76200008392334,
-      "ema50": 4.653180705781554,
-      "ema200": 4.378899535559764,
-      "ema50Distance": 2.3386020234842446,
-      "ema200Distance": 8.748785973565457
-    },
-    {
-      "symbol": "BAND-USD",
-      "type": "crypto",
-      "name": "Band Protocol",
-      "index": "CRYPTO",
-      "currentPrice": 0.16500000655651093,
-      "ema50": 0.1581203824954832,
-      "ema200": 0.19151531638638702,
-      "ema50Distance": 4.350877446950415,
-      "ema200Distance": -13.845007454328503
-    },
-    {
-      "symbol": "NU-USD",
-      "type": "crypto",
-      "name": "NuCypher",
-      "index": "CRYPTO",
-      "currentPrice": 0.01133981067687273,
-      "ema50": 0.01156499958289568,
-      "ema200": 0.016294456417091395,
-      "ema50Distance": -1.9471587907015475,
-      "ema200Distance": -30.406940946012135
-    },
-    {
-      "symbol": "NKN-USD",
-      "type": "crypto",
-      "name": "NKN",
-      "index": "CRYPTO",
-      "currentPrice": 0.00570000009611249,
-      "ema50": 0.005632592093638002,
-      "ema200": 0.006738917409233602,
-      "ema50Distance": 1.1967492293756634,
-      "ema200Distance": -15.416679713236991
-    },
-    {
-      "symbol": "OGN-USD",
-      "type": "crypto",
-      "name": "Origin Protocol",
-      "index": "CRYPTO",
-      "currentPrice": 0.017559999600052834,
-      "ema50": 0.016191152790174544,
-      "ema200": 0.01948514745131703,
-      "ema50Distance": 8.454288756443344,
-      "ema200Distance": -9.880078434479966
+      "currentPrice": 0.003702000016346574,
+      "ema50": 0.0036600880580815094,
+      "ema200": 0.005155914933737209,
+      "ema50Distance": 1.1451079209015878,
+      "ema200Distance": -28.198970232753258
     },
     {
       "symbol": "ANKR-USD",
       "type": "crypto",
       "name": "Ankr",
       "index": "CRYPTO",
-      "currentPrice": 0.0036200000904500484,
-      "ema50": 0.003481507858220141,
-      "ema200": 0.004177360870909171,
-      "ema50Distance": 3.977938234518573,
-      "ema200Distance": -13.34241397099641
+      "currentPrice": 0.0037299999967217445,
+      "ema50": 0.003506676778564124,
+      "ema200": 0.004269943313880974,
+      "ema50Distance": 6.368514472812762,
+      "ema200Distance": -12.645210427125608
     },
     {
-      "symbol": "PERP-USD",
+      "symbol": "API3-USD",
       "type": "crypto",
-      "name": "Perpetual",
+      "name": "API3",
       "index": "CRYPTO",
-      "currentPrice": 0.01850000023841858,
-      "ema50": 0.01902512142043259,
-      "ema200": 0.022758582242611906,
-      "ema50Distance": -2.7601462845332594,
-      "ema200Distance": -18.711982841443408
+      "currentPrice": 0.21899999678134918,
+      "ema50": 0.2065949829884475,
+      "ema200": 0.2649461928306931,
+      "ema50Distance": 6.004508731751415,
+      "ema200Distance": -17.34170835159146
     },
     {
-      "symbol": "POLS-USD",
+      "symbol": "BAND-USD",
       "type": "crypto",
-      "name": "Polkastarter",
+      "name": "Band Protocol",
       "index": "CRYPTO",
-      "currentPrice": 0.052299998700618744,
-      "ema50": 0.0549057575584763,
-      "ema200": 0.061549595462353814,
-      "ema50Distance": -4.745875430427024,
-      "ema200Distance": -15.027875800406342
+      "currentPrice": 0.17299999296665192,
+      "ema50": 0.15949647582124138,
+      "ema200": 0.19147290233655556,
+      "ema50Distance": 8.4663420153213,
+      "ema200Distance": -9.647793052947753
+    },
+    {
+      "symbol": "COTI-USD",
+      "type": "crypto",
+      "name": "COTI",
+      "index": "CRYPTO",
+      "currentPrice": 0.010077999904751778,
+      "ema50": 0.01039616538116297,
+      "ema200": 0.011539383109305421,
+      "ema50Distance": -3.060411841732365,
+      "ema200Distance": -12.664309614395036
+    },
+    {
+      "symbol": "CELR-USD",
+      "type": "crypto",
+      "name": "Celer Network",
+      "index": "CRYPTO",
+      "currentPrice": 0.00215000007301569,
+      "ema50": 0.0018658815652911644,
+      "ema200": 0.002249606076891203,
+      "ema50Distance": 15.227038682928933,
+      "ema200Distance": -4.42770869525573
+    },
+    {
+      "symbol": "AUDIO-USD",
+      "type": "crypto",
+      "name": "Audius",
+      "index": "CRYPTO",
+      "currentPrice": 0.012799999676644802,
+      "ema50": 0.01265280531233784,
+      "ema200": 0.0165723416010881,
+      "ema50Distance": 1.163333827348411,
+      "ema200Distance": -22.762878145087324
+    },
+    {
+      "symbol": "INJ-USD",
+      "type": "crypto",
+      "name": "Injective",
+      "index": "CRYPTO",
+      "currentPrice": 4.855999946594238,
+      "ema50": 4.692543745866668,
+      "ema200": 4.371426088738352,
+      "ema50Distance": 3.4833175688888933,
+      "ema200Distance": 11.085029187711601
+    },
+    {
+      "symbol": "CTSI-USD",
+      "type": "crypto",
+      "name": "Cartesi",
+      "index": "CRYPTO",
+      "currentPrice": 0.02672800049185753,
+      "ema50": 0.02402041364390477,
+      "ema200": 0.026225118385456176,
+      "ema50Distance": 11.27202423776667,
+      "ema200Distance": 1.917558956302897
     },
     {
       "symbol": "FET-USD",
       "type": "crypto",
       "name": "Fetch.ai",
       "index": "CRYPTO",
-      "currentPrice": 0.1426600068807602,
-      "ema50": 0.14739125887915688,
-      "ema200": 0.17922796296175647,
-      "ema50Distance": -3.209994971462825,
-      "ema200Distance": -20.403041733392417
+      "currentPrice": 0.15760000050067902,
+      "ema50": 0.1484571420337257,
+      "ema200": 0.17821787108208323,
+      "ema50Distance": 6.158584451852297,
+      "ema200Distance": -11.56891307040026
+    },
+    {
+      "symbol": "NU-USD",
+      "type": "crypto",
+      "name": "NuCypher",
+      "index": "CRYPTO",
+      "currentPrice": 0.01197558268904686,
+      "ema50": 0.011632602109621113,
+      "ema200": 0.01632176675104817,
+      "ema50Distance": 2.9484424567575784,
+      "ema200Distance": -26.628147113560495
+    },
+    {
+      "symbol": "OGN-USD",
+      "type": "crypto",
+      "name": "Origin Protocol",
+      "index": "CRYPTO",
+      "currentPrice": 0.017920000478625298,
+      "ema50": 0.01632423856080418,
+      "ema200": 0.019416906992100857,
+      "ema50Distance": 9.775414098962463,
+      "ema200Distance": -7.7092943489121515
+    },
+    {
+      "symbol": "NKN-USD",
+      "type": "crypto",
+      "name": "NKN",
+      "index": "CRYPTO",
+      "currentPrice": 0.005799999926239252,
+      "ema50": 0.005655631109902024,
+      "ema200": 0.00667329095356329,
+      "ema50Distance": 2.552656167487018,
+      "ema200Distance": -13.08636223717674
     },
     {
       "symbol": "POLY-USD",
       "type": "crypto",
       "name": "Polymath",
       "index": "CRYPTO",
-      "currentPrice": 0.009590216912329197,
-      "ema50": 0.02326130938353971,
-      "ema200": 0.036734131012457996,
-      "ema50Distance": -58.771809642343364,
-      "ema200Distance": -73.89289838086336
+      "currentPrice": 0.010061010718345642,
+      "ema50": 0.022798039609333784,
+      "ema200": 0.032672023121060635,
+      "ema50Distance": -55.868965530586465,
+      "ema200Distance": -69.20603697828483
+    },
+    {
+      "symbol": "POLS-USD",
+      "type": "crypto",
+      "name": "Polkastarter",
+      "index": "CRYPTO",
+      "currentPrice": 0.05350000038743019,
+      "ema50": 0.054906153769342686,
+      "ema200": 0.061021825969677694,
+      "ema50Distance": -2.561012355408571,
+      "ema200Distance": -12.326451171725289
+    },
+    {
+      "symbol": "PERP-USD",
+      "type": "crypto",
+      "name": "Perpetual",
+      "index": "CRYPTO",
+      "currentPrice": 0.019200000911951065,
+      "ema50": 0.019115108262164185,
+      "ema200": 0.0224651164879827,
+      "ema50Distance": 0.4441128379843596,
+      "ema200Distance": -14.534158226057933
     },
     {
       "symbol": "RARI-USD",
       "type": "crypto",
       "name": "Rarible",
       "index": "CRYPTO",
-      "currentPrice": 0.08209999650716782,
-      "ema50": 0.08554692925233359,
-      "ema200": 0.1217511725943045,
-      "ema50Distance": -4.029288690186093,
-      "ema200Distance": -32.56738743639136
+      "currentPrice": 0.08160000294446945,
+      "ema50": 0.08571270221921602,
+      "ema200": 0.12032144788084048,
+      "ema50Distance": -4.798237797039771,
+      "ema200Distance": -32.181664714273175
     },
     {
       "symbol": "QNT-USD",
       "type": "crypto",
       "name": "Quant",
       "index": "CRYPTO",
-      "currentPrice": 61.810001373291016,
-      "ema50": 61.5637892484742,
-      "ema200": 66.84379917555947,
-      "ema50Distance": 0.3999301014807445,
-      "ema200Distance": -7.530687759155666
+      "currentPrice": 63.11000061035156,
+      "ema50": 61.737571470196535,
+      "ema200": 66.50194372502042,
+      "ema50Distance": 2.223004740018904,
+      "ema200Distance": -5.100517255095946
     },
     {
       "symbol": "RSR-USD",
       "type": "crypto",
       "name": "Reserve Rights",
       "index": "CRYPTO",
-      "currentPrice": 0.0012880000285804272,
-      "ema50": 0.0012111782331248274,
-      "ema200": 0.0014829638861670925,
-      "ema50Distance": 6.342732502498852,
-      "ema200Distance": -13.146905289148616
+      "currentPrice": 0.001429000054486096,
+      "ema50": 0.0012285283875901895,
+      "ema200": 0.0014673686388874552,
+      "ema50Distance": 16.318032934439554,
+      "ema200Distance": -2.61478836227889
     },
     {
       "symbol": "SRM-USD",
       "type": "crypto",
       "name": "Serum",
       "index": "CRYPTO",
-      "currentPrice": 0.008199471980333328,
-      "ema50": 0.007031221033601062,
-      "ema200": 0.0059712214753895486,
-      "ema50Distance": 16.615193024787374,
-      "ema200Distance": 37.316494022664166
-    },
-    {
-      "symbol": "UMA-USD",
-      "type": "crypto",
-      "name": "UMA",
-      "index": "CRYPTO",
-      "currentPrice": 0.3440000116825104,
-      "ema50": 0.34918814064222375,
-      "ema200": 0.42048288862825,
-      "ema50Distance": -1.4857689468409259,
-      "ema200Distance": -18.189295929556444
+      "currentPrice": 0.008302276954054832,
+      "ema50": 0.0069634427078825245,
+      "ema200": 0.005966047997591183,
+      "ema50Distance": 19.22661393705107,
+      "ema200Distance": 39.15873552151964
     },
     {
       "symbol": "WNXM-USD",
       "type": "crypto",
       "name": "Wrapped NXM",
       "index": "CRYPTO",
-      "currentPrice": 59.30432891845703,
-      "ema50": 50.07456338666892,
-      "ema200": 51.71452684707808,
-      "ema50Distance": 18.432043951171625,
-      "ema200Distance": 14.676344412513517
-    },
-    {
-      "symbol": "TRB-USD",
-      "type": "crypto",
-      "name": "Tellor",
-      "index": "CRYPTO",
-      "currentPrice": 14.65999984741211,
-      "ema50": 13.959908026253869,
-      "ema200": 15.292019204571305,
-      "ema50Distance": 5.015017433077671,
-      "ema200Distance": -4.13300133032964
-    },
-    {
-      "symbol": "YGG-USD",
-      "type": "crypto",
-      "name": "Yield Guild",
-      "index": "CRYPTO",
-      "currentPrice": 0.020900195464491844,
-      "ema50": 0.019900564066071526,
-      "ema200": 0.03032483585491186,
-      "ema50Distance": 5.023130978104234,
-      "ema200Distance": -31.078949398149707
-    },
-    {
-      "symbol": "APE-USD",
-      "type": "crypto",
-      "name": "ApeCoin",
-      "index": "CRYPTO",
-      "currentPrice": 0.1312747746706009,
-      "ema50": 0.1355297352541873,
-      "ema200": 0.1341485037213331,
-      "ema50Distance": -3.139503353715098,
-      "ema200Distance": -2.1421998539035645
-    },
-    {
-      "symbol": "XYO-USD",
-      "type": "crypto",
-      "name": "XYO",
-      "index": "CRYPTO",
-      "currentPrice": 0.003019999945536256,
-      "ema50": 0.0030094457530449306,
-      "ema200": 0.0036099141726201227,
-      "ema50Distance": 0.350702200916784,
-      "ema200Distance": -16.341502841207426
+      "currentPrice": 62.107303619384766,
+      "ema50": 50.80498555364873,
+      "ema200": 51.635323784875105,
+      "ema50Distance": 22.24647432248768,
+      "ema200Distance": 20.28065104837609
     },
     {
       "symbol": "SXP-USD",
       "type": "crypto",
       "name": "Swipe",
       "index": "CRYPTO",
-      "currentPrice": 6.0867318097734824e-05,
-      "ema50": 0.18350550962813475,
-      "ema200": 0.08641052185047378,
-      "ema50Distance": -99.9668307953145,
-      "ema200Distance": -99.92956029335981
+      "currentPrice": 6.26736436970532e-05,
+      "ema50": 0.17629814800332663,
+      "ema200": 0.08531477854529831,
+      "ema50Distance": -99.96445019734644,
+      "ema200Distance": -99.92653835037059
+    },
+    {
+      "symbol": "UMA-USD",
+      "type": "crypto",
+      "name": "UMA",
+      "index": "CRYPTO",
+      "currentPrice": 0.3569999933242798,
+      "ema50": 0.35069219293366627,
+      "ema200": 0.41823326226157453,
+      "ema50Distance": 1.798671461102826,
+      "ema200Distance": -14.640937118721512
+    },
+    {
+      "symbol": "TRB-USD",
+      "type": "crypto",
+      "name": "Tellor",
+      "index": "CRYPTO",
+      "currentPrice": 15.6899995803833,
+      "ema50": 14.321952716999624,
+      "ema200": 15.261507877773104,
+      "ema50Distance": 9.552097332089755,
+      "ema200Distance": 2.8076629520615928
+    },
+    {
+      "symbol": "XYO-USD",
+      "type": "crypto",
+      "name": "XYO",
+      "index": "CRYPTO",
+      "currentPrice": 0.0031300000846385956,
+      "ema50": 0.003021565164943946,
+      "ema200": 0.0035841970069978874,
+      "ema50Distance": 3.588700351483605,
+      "ema200Distance": -12.672208627832257
+    },
+    {
+      "symbol": "YGG-USD",
+      "type": "crypto",
+      "name": "Yield Guild",
+      "index": "CRYPTO",
+      "currentPrice": 0.02230481430888176,
+      "ema50": 0.02014530207230434,
+      "ema200": 0.03015954315650544,
+      "ema50Distance": 10.719681585446693,
+      "ema200Distance": -26.043925157829882
+    },
+    {
+      "symbol": "GAL-USD",
+      "type": "crypto",
+      "name": "Galxe",
+      "index": "CRYPTO",
+      "currentPrice": 0.9231430292129517,
+      "ema50": 0.923799612888081,
+      "ema200": 1.1572075996432507,
+      "ema50Distance": -0.07107425311390288,
+      "ema200Distance": -20.226670694390318
+    },
+    {
+      "symbol": "APE-USD",
+      "type": "crypto",
+      "name": "ApeCoin",
+      "index": "CRYPTO",
+      "currentPrice": 0.13654769957065582,
+      "ema50": 0.1361662932303557,
+      "ema200": 0.13389783882626066,
+      "ema50Distance": 0.28010334367763706,
+      "ema200Distance": 1.9790168143292375
+    },
+    {
+      "symbol": "OP-USD",
+      "type": "crypto",
+      "name": "Optimism",
+      "index": "CRYPTO",
+      "currentPrice": 0.09843000024557114,
+      "ema50": 0.09296433541184135,
+      "ema200": 0.12198432391292474,
+      "ema50Distance": 5.879313620127917,
+      "ema200Distance": -19.309303779203
     },
     {
       "symbol": "ARB-USD",
@@ -1980,65 +2002,43 @@
       "name": "Arbitrum",
       "index": "CRYPTO",
       "currentPrice": 0.0006290287710726261,
-      "ema50": 0.0006823918220961779,
-      "ema200": 0.0007717284141456957,
-      "ema50Distance": -7.820001543926863,
-      "ema200Distance": -18.490914738579146
+      "ema50": 0.0006802980700186376,
+      "ema200": 0.0007703082339313445,
+      "ema50Distance": -7.53629933781921,
+      "ema200Distance": -18.34064036128559
     },
     {
       "symbol": "BLUR-USD",
       "type": "crypto",
       "name": "Blur",
       "index": "CRYPTO",
-      "currentPrice": 0.014399999752640724,
-      "ema50": 0.014408246752838824,
-      "ema200": 0.01873558819937168,
-      "ema50Distance": -0.057238054980386505,
-      "ema200Distance": -23.14092517723225
-    },
-    {
-      "symbol": "GAL-USD",
-      "type": "crypto",
-      "name": "Galxe",
-      "index": "CRYPTO",
-      "currentPrice": 0.9237696528434753,
-      "ema50": 0.9231757255542978,
-      "ema200": 1.1592981681750227,
-      "ema50Distance": 0.0643352368067196,
-      "ema200Distance": -20.3164743805572
-    },
-    {
-      "symbol": "OP-USD",
-      "type": "crypto",
-      "name": "Optimism",
-      "index": "CRYPTO",
-      "currentPrice": 0.09543000161647797,
-      "ema50": 0.09148070206288482,
-      "ema200": 0.12435489575463579,
-      "ema50Distance": 4.317084876412903,
-      "ema200Distance": -23.25995608184935
+      "currentPrice": 0.014999999664723873,
+      "ema50": 0.01450481068040516,
+      "ema200": 0.01868656338375995,
+      "ema50Distance": 3.41396378918392,
+      "ema200Distance": -19.72842005951711
     },
     {
       "symbol": "LDO-USD",
       "type": "crypto",
       "name": "Lido DAO",
       "index": "CRYPTO",
-      "currentPrice": 0.33239999413490295,
-      "ema50": 0.3115375898469644,
-      "ema200": 0.33450120353302815,
-      "ema50Distance": 6.6965929530965225,
-      "ema200Distance": -0.6281619844508937
+      "currentPrice": 0.3542400002479553,
+      "ema50": 0.3147431367249867,
+      "ema200": 0.33289479563886076,
+      "ema50Distance": 12.548919710830678,
+      "ema200Distance": 6.4119970899907965
     },
     {
       "symbol": "RPL-USD",
       "type": "crypto",
       "name": "Rocket Pool",
       "index": "CRYPTO",
-      "currentPrice": 1.600000023841858,
-      "ema50": 1.6200812517314211,
-      "ema200": 1.667377208243295,
-      "ema50Distance": -1.2395197998928713,
-      "ema200Distance": -4.040908324063268
+      "currentPrice": 1.6399999856948853,
+      "ema50": 1.5735407546766833,
+      "ema200": 1.6662125432412305,
+      "ema50Distance": 4.223546852579448,
+      "ema200Distance": -1.573182104088279
     }
   ]
 }
